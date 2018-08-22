@@ -1,0 +1,10 @@
+{
+  "userId": "019mr8mf4r",
+  "event": "Logged In",
+  "properties": {
+    "username": "pgibbons"
+  },
+  "context": {
+    "groupId": "acct_123"
+  }
+}

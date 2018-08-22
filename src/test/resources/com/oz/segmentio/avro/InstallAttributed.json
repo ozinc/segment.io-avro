@@ -1,0 +1,29 @@
+{
+  "context": {
+    "library": {
+      "name": "analytics.js",
+      "version": "2.11.1"
+    },
+    "page": {
+      "path": "/academy/",
+      "referrer": "",
+      "search": "",
+      "title": "Analytics Academy",
+      "url": "https://segment.com/academy/"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+    "ip": "108.0.78.21"
+  },
+  "userId": "019mr8mf4r",
+  "event": "Install Attributed",
+  "properties": {
+    "provider": "Tune/Kochava/Branch",
+    "campaign": {
+      "source": "Network/FB/AdWords/MoPub/Source",
+      "name": "Campaign Name",
+      "content": "Organic Content Title",
+      "ad_creative": "Red Hello World Ad",
+      "ad_group": "Red Ones"
+    }
+  }
+}

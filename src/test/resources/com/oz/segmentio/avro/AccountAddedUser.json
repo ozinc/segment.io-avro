@@ -1,0 +1,10 @@
+{
+  "userId": "019mr8mf4r",
+  "event": "Account Added User",
+  "properties": {
+    "invitee_role": "Owner"
+  },
+  "context": {
+    "groupId": "acct_123"
+  }
+}

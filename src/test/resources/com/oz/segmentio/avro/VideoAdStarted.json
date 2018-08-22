@@ -1,0 +1,15 @@
+{
+  "userId": "userId",
+  "event": "Video Ad Started",
+  "properties": {
+    "session_id": "12345",
+    "asset_id": "0129370",
+    "pod_id": "segA",
+    "type": "pre-roll",
+    "title": "The New New Thing!",
+    "position": 0,
+    "total_length": 30,
+    "publisher": "Apple",
+    "load_type": "dynamic"
+  }
+}

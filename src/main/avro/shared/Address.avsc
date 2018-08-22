@@ -1,0 +1,30 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "name": "Address",
+  "type": "record",
+  "doc": "Street address of a user optionally containing: city, country, postalCode, state or street",
+  "fields": [
+    {
+      "name": "city",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "type": "string"
+    },
+    {
+      "name": "postalCode",
+      "type": "string"
+    },
+    // I guess for international string is better than int here
+    {
+      "name": "state",
+      "type": "string"
+    },
+    // TODO: Maybe make this optional for international use cases?
+    {
+      "name": "street",
+      "type": "string"
+    }
+  ]
+}

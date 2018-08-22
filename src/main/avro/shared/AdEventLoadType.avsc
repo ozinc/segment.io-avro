@@ -1,0 +1,9 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "name": "AdEventLoadType",
+  "type": "enum",
+  "symbols": [
+    "LINEAR",
+    "DYNAMIC"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "Sort",
+  "fields": [
+    {
+      "name": "type",
+      "type": "string",
+      "doc": "Id of the sort type that the customer is using"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "doc": "Id of the selection type the the customer is using (ascending, descending)"
+    }
+  ]
+}

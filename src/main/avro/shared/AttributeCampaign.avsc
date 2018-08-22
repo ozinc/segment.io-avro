@@ -1,0 +1,52 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "AttributeCampaign",
+  "fields": [
+    {
+      "name": "source",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Campaign source — attributed ad network"
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "The name of the attributed campaign."
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "doc": "The content of the campaign."
+    },
+    {
+      "name": "ad_creative",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "The ad creative name."
+    },
+    {
+      "name": "ad_group",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "The ad group name."
+    },
+    {
+      "name": "medium",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Identifies what type of link was used."
+    }
+  ]
+}

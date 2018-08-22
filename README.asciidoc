@@ -1,0 +1,20 @@
+= Segment Spec Avro Implementation
+
+This project provides a full implementation of the data-types
+defined in the https://segment.com/docs/spec[Segment Spec] in AVRO (1.8.x).
+
+= Building
+
+To execute build the AVRO classes run:
+
+```bash
+$ mvn compile
+```
+
+= Testing
+
+To execute all tests run:
+
+```bash
+$ mvn clean test
+```

@@ -1,0 +1,16 @@
+{
+  "userId": "019mr8mf4r",
+  "event": "Signed Up",
+  "properties": {
+    "type": "organic",
+    "first_name": "Peter",
+    "last_name": "Gibbons",
+    "email": "pgibbons@initech.com",
+    "phone": "410-555-9412",
+    "username": "pgibbons",
+    "title": "Mr"
+  },
+  "context": {
+    "groupId": "acct_123"
+  }
+}

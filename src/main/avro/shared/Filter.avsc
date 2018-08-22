@@ -1,0 +1,17 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "Filter",
+  "fields": [
+    {
+      "name": "type",
+      "type": "string",
+      "doc": "Id of the filter type that the customer is using"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "doc": "Id of the selection that the customer chose"
+    }
+  ]
+}

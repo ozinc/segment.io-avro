@@ -1,0 +1,10 @@
+{
+  "userId": "019mr8mf4r",
+  "event": "Account Created",
+  "properties": {
+    "account_name": "Initech"
+  },
+  "context": {
+    "groupId": "acct_123"
+  }
+}

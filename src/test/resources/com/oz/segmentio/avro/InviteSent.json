@@ -1,0 +1,13 @@
+{
+  "userId": "019mr8mf4r",
+  "event": "Invite Sent",
+  "properties": {
+    "invitee_email": "pgibbons@gmail.com",
+    "invitee_first_name": "Peter",
+    "invitee_last_name": "Gibbons",
+    "invitee_role": "Owner"
+  },
+  "context": {
+    "groupId": "acct_123"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "Track",
+  "fields": [
+    {
+      "name": "anonymousId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "A pseudo-unique substitute for a User ID, for cases when you don\\’t have an absolutely unique identifier"
+    },
+    {
+      "name": "context",
+      "type": [
+        "null",
+        "Context"
+      ],
+      "doc": "Dictionary of extra information that provides useful context about a message, but is not directly related to the API call like ip address or locale."
+    },
+    {
+      "name": "integrations",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "boolean"
+          //Note: Keys need to be validated elsewhere
+        }
+      ],
+      "doc": "Dictionary of destinations to either enable or disable"
+    },
+    {
+      "name": "messageId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically collected by Segment, a unique identifier for each message that lets you find an individual message across the API"
+    },
+    {
+      "name": "receivedAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically set by Segment, the timestamp of when a message is received by Segment. It is an ISO-8601 date string."
+    },
+    {
+      "name": "sentAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp of when a message is sent to Segment, used for clock skew correction It is set automatically by the Segment tracking libraries. It is an ISO-8601 date string."
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp when the message itself took place, defaulted to the current time by the Segment Tracking API. It is an ISO-8601 date string. If the event just happened, leave it out and we’ll use the server’s time. If you’re importing data from the past, make sure you to provide a timestamp."
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Type of message, corresponding to the API method: 'identify', 'group', 'track', 'page', 'screen' or 'alias'"
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Unique identifier for the user in your database. A userId or anonymousId is required."
+    },
+    {
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Version of the Tracking API that received the message, automatically set by Segment."
+    },
+    /* ========================= Specific fields start below =================== */
+    {
+      "name": "event",
+      "type": "string",
+      "doc": "Name of the action that a user has performed."
+    },
+    {
+      "name": "properties",
+      "type": [
+        {
+          "type": "record",
+          // TODO: IMPORTANT: This should be a free form dictionary but we can't do that in AVRO, how to deal with it?
+          "name": "TrackProperties",
+          "fields": [
+            {
+              "name": "revenue",
+              "type": [
+                "double",
+                "null"
+              ],
+              "doc": "Amount of revenue an event resulted in. This should be a decimal value, so a shirt worth $19.99 would result in a revenue of 19.99."
+            },
+            {
+              "name": "currency",
+              "type": [
+                "string",
+                "null"
+              ],
+              "doc": "Currency of the revenue an event resulted in. This should be sent in the ISO 4127 format. If this is not set, we assume the revenue to be in US dollars."
+            },
+            // TODO: This is use case specific, maybe long is a better fit here?
+            {
+              "name": "value",
+              "type": [
+                "double",
+                "null"
+              ],
+              "doc": "An abstract “value” to associate with an event. This is typically used in situations where the event doesn’t generate real-dollar revenue, but has an intrinsic value to a marketing team, like newsletter signups."
+            },
+            {
+              "name": "title",
+              "type": [
+                "string",
+                "null"
+              ],
+              "doc": "This field is not officially documented, it was only found in the Track example."
+            }
+          ]
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "customProperties",
+      // JSON encoded hash of additional properties that aren't part of the reserved track properties
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "originalTimestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "This field is not officially documented, it was only found in the Track example."
+    }
+  ]
+}

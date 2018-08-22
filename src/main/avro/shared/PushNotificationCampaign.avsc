@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "PushNotificationCampaign",
+  "namespace": "com.oz.segmentio.avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "Campaign Name."
+    },
+    {
+      "name": "medium",
+      "type": "string",
+      "doc": "Identifies what type of link was used (Push Notification)."
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "doc": "Push notification content content"
+    },
+    {
+      "name": "source",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Designates the push provider. (Optional)"
+    }
+  ]
+}

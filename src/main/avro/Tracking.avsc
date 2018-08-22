@@ -1,0 +1,947 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "Tracking",
+  "fields": [
+    {
+      "name": "anonymousId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "A pseudo-unique substitute for a User ID, for cases when you don\\’t have an absolutely unique identifier"
+    },
+    {
+      "name": "context",
+      "type": [
+        "null",
+        "Context"
+      ],
+      "doc": "Dictionary of extra information that provides useful context about a message, but is not directly related to the API call like ip address or locale."
+    },
+    {
+      "name": "integrations",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "boolean"
+          //Note: Keys need to be validated elsewhere
+        }
+      ],
+      "doc": "Dictionary of destinations to either enable or disable"
+    },
+    {
+      "name": "messageId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically collected by Segment, a unique identifier for each message that lets you find an individual message across the API"
+    },
+    {
+      "name": "receivedAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically set by Segment, the timestamp of when a message is received by Segment. It is an ISO-8601 date string."
+    },
+    {
+      "name": "sentAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp of when a message is sent to Segment, used for clock skew correction It is set automatically by the Segment tracking libraries. It is an ISO-8601 date string."
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp when the message itself took place, defaulted to the current time by the Segment Tracking API. It is an ISO-8601 date string. If the event just happened, leave it out and we’ll use the server’s time. If you’re importing data from the past, make sure you to provide a timestamp."
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Type of message, corresponding to the API method: 'identify', 'group', 'track', 'page', 'screen' or 'alias'"
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Unique identifier for the user in your database. A userId or anonymousId is required."
+    },
+    {
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Version of the Tracking API that received the message, automatically set by Segment."
+    },
+    /* ========================= Specific fields start below =================== */
+    {
+      "name": "event",
+      "type": "string"
+    },
+    {
+      "name": "properties",
+      "type": [
+        {
+          "type": "record",
+          // TODO: IMPORTANT: This should be a free form dictionary but we can't do that in AVRO, how to deal with it?
+          "name": "TrackingProperties",
+          "fields": [
+            {
+              "name": "revenue",
+              "type": [
+                "null",
+                "double"
+              ]
+            },
+            {
+              "name": "currency",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "value",
+              "type": [
+                "null",
+                "double"
+              ]
+            },
+            {
+              "name": "title",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "This field is not officially documented, it was only found in the Track example."
+            },
+            {
+              "name": "provider",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "url",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "campaign",
+              "type": [
+                "null",
+                // TODO: This could become its own type as a merge of AttributeCampaign and PushNotificationCampaign
+                "AttributeCampaign"
+              ]
+            },
+            {
+              "name": "action",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "version",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "from_background",
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            {
+              "name": "referring_application",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "build",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "previous_version",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "previous_build",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "asset_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "pod_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "description",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "keywords",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ]
+            },
+            {
+              "name": "season",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "episode",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "genre",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "program",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "publisher",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "channel",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "full_episode",
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            {
+              "name": "airdate",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "bitrate",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "framerate",
+              "type": [
+                "null",
+                "float"
+              ]
+            },
+            {
+              "name": "session_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "content_asset_ids",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ]
+            },
+            {
+              "name": "content_asset_id",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            {
+              "name": "content_pod_ids",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ]
+            },
+            {
+              "name": "content_pod_id",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            {
+              "name": "ad_asset_id",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  // Only accept array here, JSON accepts flat string too
+                  "items": "string"
+                }
+              ]
+            },
+            {
+              "name": "ad_pod_id",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  // Only accept array here, JSON accepts flat string too
+                  "items": "string"
+                }
+              ]
+            },
+            {
+              "name": "ad_type",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "AdType"
+                }
+              ]
+            },
+            {
+              "name": "position",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "total_length",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "video_player",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "sound",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "full_screen",
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            {
+              "name": "ad_enabled",
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            {
+              "name": "quality",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "method",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "livestream",
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            {
+              "name": "pod_position",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "pod_length",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "type",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "load_type",
+              "type": [
+                "null",
+                "AdEventLoadType"
+              ]
+            },
+            {
+              "name": "content",
+              "type": [
+                "null",
+                "ContentEvent"
+              ]
+            },
+            {
+              "name": "quartile",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "account_name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "first_name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "last_name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "email",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "phone",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "username",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "invitee_email",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "invitee_first_name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "invitee_last_name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "invitee_role",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "trial_start_date",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "trial_end_date",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "trial_plan_name",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ]
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "customProperties",
+      // JSON encoded hash of additional properties that aren't part of the reserved track properties
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "originalTimestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "This field is not officially documented, it was only found in the Track example."
+    },
+    {
+      "name": "category",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Product category being viewed"
+    },
+    {
+      "name": "filters",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "Filter"
+        }
+      ]
+    },
+    {
+      "name": "sorts",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "Sort"
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "Product"
+        }
+      ]
+    },
+    {
+      "name": "list_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "query",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Query the user searched with"
+    },
+    {
+      "name": "cart_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "affiliation",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "revenue",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "shipping",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "tax",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "discount",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "currency",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "checkout_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "step",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "shipping_method",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "payment_method",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "total",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "product_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "sku",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Promotion’s name"
+    },
+    {
+      "name": "brand",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "variant",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "price",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "quantity",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "url",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "image_url",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "order_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "coupon_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "coupon_name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "coupon",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "This field is not officially documented, it was only found in the CouponDenied example."
+    },
+    {
+      "name": "reason",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "promotion_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "promotion’s ID"
+    },
+    {
+      "name": "creative",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Promotion’s creative"
+    },
+    {
+      "name": "position",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Promotion’s position (Note that there are track type events with int type 'position', these have to be coerced to string here)"
+    },
+    {
+      "name": "review_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "review_body",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "rating",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "share_via",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "share_message",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "recipient",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "wishlist_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "wishlist_name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "bitrate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "framerate",
+      "type": [
+        "null",
+        "float"
+      ]
+    },
+    {
+      "name": "startupTime",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "droppedFrames",
+      "type": [
+        "null",
+        "int"
+      ]
+    }
+  ]
+}

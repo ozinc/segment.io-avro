@@ -1,0 +1,20 @@
+{
+  "context": {
+    "library": {
+      "name": "analytics.js",
+      "version": "2.11.1"
+    },
+    "page": {
+      "path": "/academy/",
+      "referrer": "",
+      "search": "",
+      "title": "Analytics Academy",
+      "url": "https://segment.com/academy/"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+    "ip": "108.0.78.21"
+  },
+  "order_id": "50314b8e9bcf000000000000",
+  "cart_id": "923923929jd29jd92dj9j93fj3",
+  "coupon_id": "may_deals_2016"
+}

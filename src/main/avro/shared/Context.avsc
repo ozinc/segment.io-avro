@@ -1,0 +1,365 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "Context",
+  "fields": [
+    {
+      "name": "active",
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "doc": "Whether a user is active. This is usually used to flag an .identify() call to just update the traits but not 'last seen'"
+    },
+    {
+      "name": "app",
+      "doc": "Dictionary of information about the current application, containing name, version and build. This is collected automatically from our mobile libraries when possible.",
+      "type": [
+        "null",
+        {
+          "name": "App",
+          "type": "record",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            },
+            {
+              "name": "build",
+              "type": "string"
+            }
+            // TODO: Maybe build is numeric?
+          ]
+        }
+      ]
+    },
+    {
+      "name": "campaign",
+      "doc": "Dictionary of information about the campaign that resulted in the API call, containing name, source, medium, term and content. This maps directly to the common UTM campaign parameters.",
+      "type": [
+        {
+          "type": "record",
+          "name": "Campaign",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "source",
+              "type": "string"
+            },
+            {
+              "name": "medium",
+              "type": "string"
+            },
+            {
+              "name": "term",
+              "type": "string"
+            },
+            {
+              "name": "content",
+              "type": "string"
+            }
+          ]
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "device",
+      "doc": "Dictionary of information about the device, containing id, manufacturer, model, name, type and version",
+      "type": [
+        {
+          "type": "record",
+          "name": "Device",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "manufacturer",
+              "type": "string"
+            },
+            {
+              "name": "model",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "type",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            }
+          ]
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "ip",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Current user\\’s IP address"
+    },
+    {
+      "name": "library",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Library",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "doc": "Dictionary of information about the library making the requests to the API, containing name and version"
+    },
+    {
+      "name": "locale",
+      "type": [
+        "string",
+        "null"
+      ],
+      "doc": "Locale string for the current user, for example en-US"
+    },
+    {
+      "name": "location",
+      "doc": "Dictionary of information about the user\\’s current location, containing city, country, latitude, longitude, region and speed",
+      "type": [
+        {
+          "type": "record",
+          "name": "Location",
+          "fields": [
+            {
+              "name": "city",
+              "type": "string"
+            },
+            {
+              "name": "country",
+              "type": "string"
+            },
+            {
+              "name": "latitude",
+              "type": "double"
+            },
+            {
+              "name": "longitude",
+              "type": "double"
+            },
+            {
+              "name": "region",
+              "type": "string"
+            },
+            {
+              "name": "speed",
+              "type": "double"
+              //TODO: This is probably good enough as float?
+            }
+          ]
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "network",
+      "doc": "Dictionary of information about the current network connection, containing bluetooth, carrier, cellular and wifi",
+      "type": [
+        {
+          "type": "record",
+          "name": "Network",
+          "fields": [
+            {
+              "name": "bluetooth",
+              "type": "boolean"
+            },
+            {
+              "name": "carrier",
+              "type": "string"
+            },
+            {
+              "name": "cellular",
+              "type": "boolean"
+            },
+            {
+              "name": "wifi",
+              "type": "boolean"
+            }
+          ]
+        },
+        "null"
+      ]
+    },
+    {
+      "name": "os",
+      "doc": "Dictionary of information about the operating system, containing name and version",
+      "type": [
+        "null",
+        {
+          // TODO: Check if drying this up against library type makes sense
+          "type": "record",
+          "name": "Os",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "doc": "Dictionary of information about the current page in the browser, containing hash, path, referrer, search, title and url. Automatically collected by Analytics.js.",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "CommonPage",
+          "fields": [
+            {
+              "name": "hash",
+              "type": [
+                "null",
+                "string"
+              ]
+              // TODO: Or raw bytes?
+            },
+            {
+              "name": "path",
+              "type": "string"
+            },
+            {
+              "name": "referrer",
+              // TODO: Or is this also referrer type?
+              "type": "string"
+            },
+            {
+              "name": "search",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "referrer",
+      "doc": "Dictionary of information about the way the user was referred to the website or app, containing type, name, url and link",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Referrer",
+          "fields": [
+            {
+              "name": "type",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "name": "link",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "screen",
+      "doc": "Dictionary of information about the device\\’s screen, containing density, height and width",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "CommonScreen",
+          "fields": [
+            {
+              "name": "density",
+              "type": "int"
+            },
+            {
+              "name": "height",
+              "type": "int"
+            },
+            {
+              "name": "width",
+              "type": "int"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "timezone",
+      "doc": "Timezones are sent as tzdata strings to add user timezone information which might be stripped from the timestamp. Ex: America/New_York",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "groupId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Group / Account ID. This is useful in B2B use cases where you need to attribute your non-group calls to a company or account. It is relied on by several Customer Success and CRM tools."
+    },
+    {
+      "name": "traits",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Dictionary of traits of the current user. This is useful in cases where you need to track an event, but also associate information from a previous identify call"
+    },
+    {
+      "name": "userAgent",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "User agent of the device making the request"
+    }
+  ]
+}

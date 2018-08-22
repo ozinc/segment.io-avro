@@ -1,0 +1,293 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "Identify",
+  "fields": [
+    {
+      "name": "anonymousId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "A pseudo-unique substitute for a User ID, for cases when you don\\’t have an absolutely unique identifier"
+    },
+    {
+      "name": "context",
+      "type": [
+        "null",
+        "Context"
+      ],
+      "doc": "Dictionary of extra information that provides useful context about a message, but is not directly related to the API call like ip address or locale."
+    },
+    {
+      "name": "integrations",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "boolean"
+          //Note: Keys need to be validated elsewhere
+        }
+      ],
+      "doc": "Dictionary of destinations to either enable or disable"
+    },
+    {
+      "name": "messageId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically collected by Segment, a unique identifier for each message that lets you find an individual message across the API"
+    },
+    {
+      "name": "receivedAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically set by Segment, the timestamp of when a message is received by Segment. It is an ISO-8601 date string."
+    },
+    {
+      "name": "sentAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp of when a message is sent to Segment, used for clock skew correction It is set automatically by the Segment tracking libraries. It is an ISO-8601 date string."
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp when the message itself took place, defaulted to the current time by the Segment Tracking API. It is an ISO-8601 date string. If the event just happened, leave it out and we’ll use the server’s time. If you’re importing data from the past, make sure you to provide a timestamp."
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Type of message, corresponding to the API method: 'identify', 'group', 'track', 'page', 'screen' or 'alias'"
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Unique identifier for the user in your database. A userId or anonymousId is required."
+    },
+    {
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Version of the Tracking API that received the message, automatically set by Segment."
+    },
+    /* ========================= Specific fields start below =================== */
+    {
+      "name": "channel",
+      "type": [
+        "string",
+        "null"
+      ],
+      "doc": "This field is not officially documented, it was only found in the Identify example."
+    },
+    {
+      "name": "traits",
+      "doc": "Free-form dictionary of traits of the user, like email or name.",
+      "type": {
+        "type": "record",
+        "name": "IdentifyTraits",
+        "fields": [
+          {
+            "name": "address",
+            "type": "Address",
+            "doc": "Street address of a user optionally containing: city, country, postalCode, state or street"
+          },
+          {
+            "name": "age",
+            "type": [
+              "null",
+              "int"
+            ],
+            "doc": "Age of a user"
+          },
+          {
+            "name": "avatar",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "URL to an avatar image for the user"
+          },
+          {
+            "name": "birthday",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "User’s birthday"
+          },
+          {
+            "name": "company",
+            "doc": "Company the user represents, optionally containing: name (a String), id (a String or Number), industry (a String), employee_count (a Number) or plan (a String)",
+            "type": [
+              "null",
+              {
+                "type": "record",
+                "name": "Company",
+                "fields": [
+                  {
+                    "name": "name",
+                    "type": "string"
+                  },
+                  {
+                    "name": "id",
+                    // TODO: Api doc says string or number!
+                    "type": "string"
+                  },
+                  {
+                    "name": "industry",
+                    "type": "string"
+                  },
+                  {
+                    "name": "employee_count",
+                    "type": "int"
+                  },
+                  {
+                    "name": "plan",
+                    "type": "string"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "createdAt",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Date the user’s account was first created. We recommend ISO-8601 date strings, but also accept Unix timestamps for convenience."
+          },
+          {
+            "name": "description",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Description of the user"
+          },
+          {
+            "name": "email",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Email address of a user"
+          },
+          {
+            "name": "firstName",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "First name of a user"
+          },
+          {
+            "name": "gender",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Gender of a user"
+          },
+          {
+            "name": "id",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Unique ID in your database for a user"
+          },
+          {
+            "name": "lastName",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Last name of a user"
+          },
+          {
+            "name": "name",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Full name of a user. If you only pass a first and last name we’ll automatically fill in the full name for you."
+          },
+          {
+            "name": "phone",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Phone number of a user"
+          },
+          {
+            "name": "title",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Title of a user, usually related to their position at a specific company Example: “VP of Engineering”"
+          },
+          {
+            "name": "username",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "User’s username. This should be unique to each user, like the usernames of Twitter or GitHub."
+          },
+          {
+            "name": "website",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Website of a user"
+          },
+          {
+            "name": "plan",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "This field is not officially documented, it was only found in the Identify example."
+          },
+          {
+            "name": "logins",
+            "type": [
+              "null",
+              "int"
+            ],
+            "doc": "This field is not officially documented, it was only found in the Identify example."
+          }
+        ]
+      }
+    },
+    {
+      "name": "properties",
+      // JSON encoded hash of additional properties
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}

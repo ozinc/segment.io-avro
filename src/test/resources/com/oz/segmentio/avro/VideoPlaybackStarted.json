@@ -1,0 +1,51 @@
+{
+  "context": {
+    "library": {
+      "name": "analytics.js",
+      "version": "2.11.1"
+    },
+    "page": {
+      "path": "/academy/",
+      "referrer": "",
+      "search": "",
+      "title": "Analytics Academy",
+      "url": "https://segment.com/academy/"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+    "ip": "108.0.78.21"
+  },
+  "userId": "userId",
+  "event": "Video Playback Started",
+  "properties": {
+    "session_id": "12345",
+    "content_asset_ids": [
+      "0129370"
+    ],
+    "content_pod_ids": [
+      "segA",
+      "segB"
+    ],
+    "ad_asset_id": [
+      "ad123",
+      "ad097"
+    ],
+    "ad_pod_id": [
+      "adSegA",
+      "adSegB"
+    ],
+    "ad_type": [
+      "mid-roll",
+      "post-roll"
+    ],
+    "position": 0,
+    "total_length": 392,
+    "bitrate": 100,
+    "framerate": 29,
+    "video_player": "youtube",
+    "sound": 88,
+    "full_screen": false,
+    "ad_enabled": true,
+    "quality": "hd1080",
+    "livestream": false
+  }
+}

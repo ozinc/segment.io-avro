@@ -1,0 +1,23 @@
+{
+  "userId": "userId",
+  "event": "Video Content Started",
+  "properties": {
+  "session_id": "12345",
+  "asset_id": "0129370",
+  "pod_id": "segA",
+  "program": "Planet Earth",
+  "title": "Seasonal Forests",
+  "description": "David Attenborough reveals the greatest woodlands on earth.",
+  "season": "1",
+  "position": 0,
+  "total_length": 3600,
+  "genre": "Documentary",
+  "publisher": "BBC",
+  "full_episode": true,
+  "keywords": [
+      "nature",
+      "forests",
+      "earth"
+    ]
+  }
+}

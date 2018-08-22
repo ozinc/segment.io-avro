@@ -1,0 +1,25 @@
+{
+  "context": {
+    "library": {
+      "name": "analytics.js",
+      "version": "2.11.1"
+    },
+    "page": {
+      "path": "/academy/",
+      "referrer": "",
+      "search": "",
+      "title": "Analytics Academy",
+      "url": "https://segment.com/academy/"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+    "ip": "108.0.78.21"
+  },
+  "userId": "019mr8mf4r",
+  "event": "Application Updated",
+  "properties": {
+    "previous_version": "1.1.2",
+    "previous_build": 1234,
+    "version": "1.2.0",
+    "build": 1456
+  }
+}

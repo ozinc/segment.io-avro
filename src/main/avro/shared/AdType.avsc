@@ -1,0 +1,10 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "name": "AdType",
+  "type": "enum",
+  "symbols": [
+    "PRE_ROLL",
+    "MID_ROLL",
+    "POST_ROLL"
+  ]
+}

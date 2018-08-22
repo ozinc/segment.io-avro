@@ -1,0 +1,145 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "CheckoutStarted",
+  "fields": [
+    {
+      "name": "anonymousId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "A pseudo-unique substitute for a User ID, for cases when you don\\’t have an absolutely unique identifier"
+    },
+    {
+      "name": "context",
+      "type": [
+        "null",
+        "Context"
+      ],
+      "doc": "Dictionary of extra information that provides useful context about a message, but is not directly related to the API call like ip address or locale."
+    },
+    {
+      "name": "integrations",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "boolean"
+          //Note: Keys need to be validated elsewhere
+        }
+      ],
+      "doc": "Dictionary of destinations to either enable or disable"
+    },
+    {
+      "name": "messageId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically collected by Segment, a unique identifier for each message that lets you find an individual message across the API"
+    },
+    {
+      "name": "receivedAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically set by Segment, the timestamp of when a message is received by Segment. It is an ISO-8601 date string."
+    },
+    {
+      "name": "sentAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp of when a message is sent to Segment, used for clock skew correction It is set automatically by the Segment tracking libraries. It is an ISO-8601 date string."
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp when the message itself took place, defaulted to the current time by the Segment Tracking API. It is an ISO-8601 date string. If the event just happened, leave it out and we’ll use the server’s time. If you’re importing data from the past, make sure you to provide a timestamp."
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Type of message, corresponding to the API method: 'identify', 'group', 'track', 'page', 'screen' or 'alias'"
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Unique identifier for the user in your database. A userId or anonymousId is required."
+    },
+    {
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Version of the Tracking API that received the message, automatically set by Segment."
+    },
+    /* ========================= Specific fields start below =================== */
+    {
+      "name": "order_id",
+      "type": "string",
+      "doc": "Order/transaction ID"
+    },
+    {
+      "name": "affiliation",
+      "type": "string",
+      "doc": "Store or affiliation from which this transaction occurred (e.g. Google Store)"
+    },
+    {
+      "name": "value",
+      "type": "float",
+      "doc": "Revenue with discounts and coupons added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied"
+    },
+    {
+      "name": "revenue",
+      "type": "float",
+      "doc": "Revenue associated with the transaction (excluding shipping and tax)"
+    },
+    {
+      "name": "shipping",
+      "type": "float",
+      "doc": "Shipping cost associated with the transaction"
+    },
+    {
+      "name": "tax",
+      "type": "float",
+      "doc": "Total tax associated with the transaction"
+    },
+    {
+      "name": "discount",
+      "type": "float",
+      "doc": "Total discount associated with the transaction"
+    },
+    {
+      "name": "coupon",
+      "type": "string",
+      "doc": "Transaction coupon redeemed with the transaction"
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "doc": "Currency code associated with the transaction"
+    },
+    {
+      "name": "products",
+      "type": {
+        "type": "array",
+        "items": "Product"
+      },
+      "doc": "Products in the order"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "userId": "019mr8mf4r",
+  "event": "Trial Started",
+  "properties": {
+    "trial_start_date": 1535429387,
+    "trial_end_date": 1535429387,
+    "trial_plan_name": "Business"
+  },
+  "context": {
+    "groupId": "acct_123"
+  }
+}

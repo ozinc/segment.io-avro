@@ -1,0 +1,161 @@
+{
+  "namespace": "com.oz.segmentio.avro",
+  "type": "record",
+  "name": "ProductViewed",
+  "fields": [
+    {
+      "name": "anonymousId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "A pseudo-unique substitute for a User ID, for cases when you don\\’t have an absolutely unique identifier"
+    },
+    {
+      "name": "context",
+      "type": [
+        "null",
+        "Context"
+      ],
+      "doc": "Dictionary of extra information that provides useful context about a message, but is not directly related to the API call like ip address or locale."
+    },
+    {
+      "name": "integrations",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "boolean"
+          //Note: Keys need to be validated elsewhere
+        }
+      ],
+      "doc": "Dictionary of destinations to either enable or disable"
+    },
+    {
+      "name": "messageId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically collected by Segment, a unique identifier for each message that lets you find an individual message across the API"
+    },
+    {
+      "name": "receivedAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Automatically set by Segment, the timestamp of when a message is received by Segment. It is an ISO-8601 date string."
+    },
+    {
+      "name": "sentAt",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp of when a message is sent to Segment, used for clock skew correction It is set automatically by the Segment tracking libraries. It is an ISO-8601 date string."
+    },
+    {
+      "name": "timestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Timestamp when the message itself took place, defaulted to the current time by the Segment Tracking API. It is an ISO-8601 date string. If the event just happened, leave it out and we’ll use the server’s time. If you’re importing data from the past, make sure you to provide a timestamp."
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Type of message, corresponding to the API method: 'identify', 'group', 'track', 'page', 'screen' or 'alias'"
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Unique identifier for the user in your database. A userId or anonymousId is required."
+    },
+    {
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Version of the Tracking API that received the message, automatically set by Segment."
+    },
+    /* ========================= Specific fields start below =================== */
+    {
+      "name": "product_id",
+      "type": "string",
+      "doc": "Database id of the product being viewed"
+    },
+    {
+      "name": "sku",
+      "type": "string",
+      "doc": "Sku of the product being viewed"
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "doc": "Product category being viewed"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "Name of the product being viewed"
+    },
+    {
+      "name": "brand",
+      "type": "string",
+      "doc": "Brand associated with the product"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "doc": "Variant of the product (e.g. Black)"
+    },
+    {
+      "name": "price",
+      "type": "float",
+      "doc": "Price of the product being viewed"
+    },
+    {
+      "name": "quantity",
+      "type": "int",
+      "doc": "Quantity of a product"
+    },
+    {
+      "name": "coupon",
+      "type": "string",
+      "doc": "Coupon code associated with a product (e.g MAY_DEALS_3)"
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "name": "position",
+      "type": "int",
+      "doc": "Position in the product list (ex. 3)"
+    },
+    {
+      "name": "value",
+      "type": "float",
+      "doc": "Total value of the product after quantity"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "doc": "URL of the product page"
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "doc": "Image url of the product"
+    }
+  ]
+}
