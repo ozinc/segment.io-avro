@@ -34,22 +34,28 @@ public final class IntegrationTests {
                      Paths.get(Resources.getResource(IntegrationTests.class, "").toURI())
                  )
         ) {
-            directoryStream.forEach(file -> {
-                if (file.toString().endsWith(".json")) {
-                    Assertions.assertThat(schemata.stream().filter(cls -> {
+            directoryStream.forEach(
+                file -> {
+                    if (file.toString().endsWith(".json")) {
                         try {
-                            assertFullCycle(
-                                file.getFileName().toString().replaceAll(".json$", ""),
-                                (Schema) cls.getMethod("getClassSchema", null).invoke(null),
-                                cls
-                            );
-                            return true;
-                        } catch (Exception ignored) {
-                            return false;
+                            Assertions.assertThat(schemata.stream().filter(cls -> {
+                                try {
+                                    assertFullCycle(
+                                        file.getFileName().toString().replaceAll(".json$", ""),
+                                        (Schema) cls.getMethod("getClassSchema", null).invoke(null),
+                                        cls
+                                    );
+                                    return true;
+                                } catch (Exception ignored) {
+                                    return false;
+                                }
+                            }).findFirst()).isPresent();
+                        } catch (AssertionError e) {
+                            throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
                         }
-                    }).findFirst()).isPresent();
+                    }
                 }
-            });
+            );
         }
     }
 }
