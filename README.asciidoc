@@ -5,7 +5,7 @@ defined in the https://segment.com/docs/spec[Segment Spec] in AVRO (1.8.x).
 
 = Building
 
-To execute build the AVRO classes run:
+To build the AVRO classes run:
 
 ```bash
 $ mvn compile
