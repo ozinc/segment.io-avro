@@ -11,7 +11,9 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import org.apache.avro.Schema;
+import org.apache.avro.specific.SpecificRecordBase;
 import org.joda.time.format.ISODateTimeFormat;
+import org.reflections.Reflections;
 
 public final class JsonToAvroUtils {
 
@@ -25,26 +27,9 @@ public final class JsonToAvroUtils {
         // Utility Class
     }
 
-    /**
-     * Converts known {@link String}s to their correct representation as an Avro generated {@link Enum}.
-     * @param string String to convert
-     * @return Enum
-     */
-    public static Enum<?> stringToEnum(String string) {
-        switch (string) {
-            case "mid-roll":
-                return AdType.MID_ROLL;
-            case "post-roll":
-                return AdType.POST_ROLL;
-            case "pre-roll":
-                return AdType.PRE_ROLL;
-            case "dynamic":
-                return AdEventLoadType.DYNAMIC;
-            case "linear":
-                return AdEventLoadType.LINEAR;
-            default:
-                throw new IllegalArgumentException("Unknown ENUM value [" + string + "]");
-        }
+    public static Collection<Class<? extends SpecificRecordBase>> allSchemata() {
+        Reflections reflections = new Reflections("com.oz.segmentio.avro");
+        return reflections.getSubTypesOf(SpecificRecordBase.class);
     }
 
     /**
@@ -214,6 +199,28 @@ public final class JsonToAvroUtils {
             case LONG:
                 result.put(key, value.longValue());
                 break;
+        }
+    }
+
+    /**
+     * Converts known {@link String}s to their correct representation as an Avro generated {@link Enum}.
+     * @param string String to convert
+     * @return Enum
+     */
+    private static Enum<?> stringToEnum(String string) {
+        switch (string) {
+            case "mid-roll":
+                return AdType.MID_ROLL;
+            case "post-roll":
+                return AdType.POST_ROLL;
+            case "pre-roll":
+                return AdType.PRE_ROLL;
+            case "dynamic":
+                return AdEventLoadType.DYNAMIC;
+            case "linear":
+                return AdEventLoadType.LINEAR;
+            default:
+                throw new IllegalArgumentException("Unknown ENUM value [" + string + "]");
         }
     }
 }

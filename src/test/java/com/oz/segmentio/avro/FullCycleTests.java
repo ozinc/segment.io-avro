@@ -309,7 +309,7 @@ public final class FullCycleTests {
         }
     }
 
-    private static void assertFullCycle(String name, Schema avro, Class<?> clazz) throws IOException {
+    public static void assertFullCycle(String name, Schema avro, Class<?> clazz) throws IOException {
         try (InputStream input = FullCycleTests.class.getResourceAsStream(name + ".json")) {
             @SuppressWarnings("unchecked") final Map<String, Object> data = JsonToAvroUtils.sanitizeNumericTypes(
                 avro,
