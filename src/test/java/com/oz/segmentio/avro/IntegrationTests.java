@@ -2,12 +2,16 @@ package com.oz.segmentio.avro;
 
 import com.google.common.io.Resources;
 import com.oz.segmentio.json.JsonToAvroUtils;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.Map;
 import org.apache.avro.Schema;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.assertj.core.api.Assertions;
@@ -29,33 +33,57 @@ public final class IntegrationTests {
         }
         // Add aggregate Tracking event at the end of the classes to test so it's used as a fallback should no specific class match
         schemata.add(Tracking.class);
-        try (DirectoryStream<Path> directoryStream =
-                 Files.newDirectoryStream(
-                     Paths.get(Resources.getResource(IntegrationTests.class, "").toURI())
-                 )
-        ) {
-            directoryStream.forEach(
-                file -> {
+        Path resourceTestCases = Paths.get(Resources.getResource(IntegrationTests.class, "").toURI());
+        Path customTestCases = Paths.get(System.getProperty("com.oz.segmentio.avro.projectRoot", ".")).resolve("testCases");
+        for (final Path cases : Arrays.asList(resourceTestCases, customTestCases)) {
+            try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(cases)) {
+                directoryStream.forEach(file -> {
                     if (file.toString().endsWith(".json")) {
                         try {
-                            Assertions.assertThat(schemata.stream().filter(cls -> {
-                                try {
-                                    assertFullCycle(
-                                        file.getFileName().toString().replaceAll(".json$", ""),
-                                        (Schema) cls.getMethod("getClassSchema", null).invoke(null),
-                                        cls
-                                    );
-                                    return true;
-                                } catch (Exception ignored) {
-                                    return false;
-                                }
-                            }).findFirst()).isPresent();
-                        } catch (AssertionError e) {
+                            String type = typeFromJsonFile(file);
+                            Assertions.assertThat(
+                                schemata.stream().filter(
+                                    cls -> {
+                                        Schema schema;
+                                        try {
+                                            schema = extractSchema(cls);
+                                        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
+                                            throw new AssertionError(
+                                                "Extracting schema from AVRO class failed, " +
+                                                    "this is likely an issue with the AVRO dependency itself.",
+                                                e
+                                            );
+                                        }
+                                        if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
+                                            return false;
+                                        }
+                                        try {
+                                            assertFullCycle(file, schema, cls);
+                                            return true;
+                                        } catch (Exception ignored) {
+                                            return false;
+                                        }
+                                    }
+                                ).findFirst()).isPresent();
+                        } catch (AssertionError | IOException e) {
                             throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
                         }
                     }
-                }
-            );
+                });
+            }
         }
+    }
+
+    private static String typeFromJsonFile(Path file) throws IOException {
+        Map<String, Object> map = TestUtil.OBJECT_MAPPER.readerFor(Map.class).readValue(file.toFile());
+        if (map == null) {
+            fail("Could not read map from [" + file + "].");
+        }
+        return (String) map.get("type");
+    }
+
+    private static Schema extractSchema(Class<? extends SpecificRecordBase> cls)
+        throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        return (Schema) cls.getMethod("getClassSchema", null).invoke(null);
     }
 }

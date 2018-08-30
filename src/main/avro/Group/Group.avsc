@@ -2,6 +2,7 @@
   "namespace": "com.oz.segmentio.avro",
   "type": "record",
   "name": "Group",
+  "_type": "group",
   "fields": [
     {
       "name": "anonymousId",

@@ -22,8 +22,8 @@ $ mvn clean test
 == Adding Additional Test Cases
 
 The test framework by default will try to find a valid AVRO schema for each event (`.json` file)
-that is placed in `src/test/resources/com/oz/segmentio/avro` and check that serializing the given
+that is placed in `./testCases` and check that serializing the given
 JSON to AVRO and subsequent deserialization of the AVRO encoded data happens without data loss.
 
-If you wish to add a new test event, simple put it into a new file in `src/test/resources/com/oz/segmentio/avro`
+If you wish to add a new test event, simple put it into a new file in `./testCases`
 and ending in `.json` and the integration tests will pick it up automatically.

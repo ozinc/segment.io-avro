@@ -2,6 +2,7 @@
   "namespace": "com.oz.segmentio.avro",
   "type": "record",
   "name": "Alias",
+  "_type": "alias",
   "fields": [
     {
       "name": "anonymousId",

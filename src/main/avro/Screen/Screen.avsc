@@ -1,6 +1,7 @@
 {
   "namespace": "com.oz.segmentio.avro",
   "type": "record",
+  "_type": "screen",
   "name": "Screen",
   "fields": [
     {

@@ -1,12 +1,13 @@
 package com.oz.segmentio.avro;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.avro.AvroMapper;
 import com.fasterxml.jackson.dataformat.avro.AvroSchema;
 import com.oz.segmentio.json.JsonToAvroUtils;
 import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -19,8 +20,6 @@ import org.junit.Test;
 import static org.junit.Assert.fail;
 
 public final class FullCycleTests {
-
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     private static final AvroMapper AVRO_MAPPER = new AvroMapper();
 
@@ -311,17 +310,27 @@ public final class FullCycleTests {
 
     public static void assertFullCycle(String name, Schema avro, Class<?> clazz) throws IOException {
         try (InputStream input = FullCycleTests.class.getResourceAsStream(name + ".json")) {
-            @SuppressWarnings("unchecked") final Map<String, Object> data = JsonToAvroUtils.sanitizeNumericTypes(
-                avro,
-                JsonToAvroUtils.sanitizeJsonKeysDeep(OBJECT_MAPPER.readValue(input, Map.class))
-            );
-            AvroSchema schema = new AvroSchema(avro);
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            AVRO_MAPPER.writer(schema).writeValue(baos, data);
-            assertAvroEqualsMap(
-                AVRO_MAPPER.reader(schema).forType(clazz).readValue(baos.toByteArray()), data
-            );
+            assertFullCycle(avro, clazz, input);
         }
+    }
+
+    public static void assertFullCycle(Path file, Schema avro, Class<?> clazz) throws IOException {
+        try (InputStream input = new FileInputStream(file.toFile())) {
+            assertFullCycle(avro, clazz, input);
+        }
+    }
+
+    private static void assertFullCycle(final Schema avro, final Class<?> clazz, final InputStream input) throws IOException {
+        @SuppressWarnings("unchecked") final Map<String, Object> data = JsonToAvroUtils.sanitizeNumericTypes(
+            avro,
+            JsonToAvroUtils.sanitizeJsonKeysDeep(TestUtil.OBJECT_MAPPER.readValue(input, Map.class))
+        );
+        AvroSchema schema = new AvroSchema(avro);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        AVRO_MAPPER.writer(schema).writeValue(baos, data);
+        assertAvroEqualsMap(
+            AVRO_MAPPER.reader(schema).forType(clazz).readValue(baos.toByteArray()), data
+        );
     }
 
     @SuppressWarnings("unchecked")
