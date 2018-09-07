@@ -96,6 +96,7 @@
                             <sourceDirectory>${project.basedir}/src/main/avro/</sourceDirectory>
                             <excludes>
                                 <exclude>**/Video/Ads/AdEvent.avsc</exclude>
+                                <exclude>**/Tracking/Tracking.avsc</exclude>
                             </excludes>
                             <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                             <imports>
@@ -112,9 +113,25 @@
                         <configuration>
                             <imports>
                                 <import>${project.basedir}/src/main/avro/shared/</import>
-                                <import>${project.basedir}/src/main/avro/Video/ContentEvents/</import>
+                                <import>${project.basedir}/src/main/avro/Video/ContentEvents/
+                                </import>
                             </imports>
                             <sourceDirectory>${project.basedir}/src/main/avro/Video/Ads</sourceDirectory>
+                            <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>Third Pass</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>schema</goal>
+                        </goals>
+                        <configuration>
+                            <imports>
+                                <import>${project.basedir}/src/main/avro/shared/</import>
+                                <import>${project.basedir}/src/main/avro/Video/ContentEvents/</import>
+                            </imports>
+                            <sourceDirectory>${project.basedir}/src/main/avro/Tracking</sourceDirectory>
                             <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                         </configuration>
                     </execution>
@@ -149,7 +166,8 @@
                 </dependencies>
                 <configuration>
                     <systemProperties>
-                        <com.oz.segmentio.avro.projectRoot>${project.basedir}</com.oz.segmentio.avro.projectRoot>
+                        <com.oz.segmentio.avro.projectRoot>${project.basedir}
+                        </com.oz.segmentio.avro.projectRoot>
                     </systemProperties>
                 </configuration>
             </plugin>
