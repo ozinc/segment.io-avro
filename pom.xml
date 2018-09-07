@@ -87,16 +87,35 @@
                 <version>${avro.version}</version>
                 <executions>
                     <execution>
+                        <id>First Pass</id>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>schema</goal>
                         </goals>
                         <configuration>
                             <sourceDirectory>${project.basedir}/src/main/avro/</sourceDirectory>
+                            <excludes>
+                                <exclude>**/Video/Ads/AdEvent.avsc</exclude>
+                            </excludes>
                             <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                             <imports>
                                 <import>${project.basedir}/src/main/avro/shared/</import>
                             </imports>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>Second Pass</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>schema</goal>
+                        </goals>
+                        <configuration>
+                            <imports>
+                                <import>${project.basedir}/src/main/avro/shared/</import>
+                                <import>${project.basedir}/src/main/avro/Video/ContentEvents/</import>
+                            </imports>
+                            <sourceDirectory>${project.basedir}/src/main/avro/Video/Ads</sourceDirectory>
+                            <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
