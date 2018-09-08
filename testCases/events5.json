@@ -1,0 +1,1864 @@
+{
+	"batch": [{
+		"messageId": "54B056EB-6B6B-45C8-8924-397E549B18E6",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3556,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:16.340Z",
+		"integrations": {}
+	}, {
+		"messageId": "C54C586F-2CE5-4991-BA48-A644CB96AAD9",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3557,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:17.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "C67DBC66-5454-4784-9F29-F19136110DFC",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3558,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:18.341Z",
+		"integrations": {}
+	}, {
+		"messageId": "8D901CEB-AC38-4BBF-A42F-D2D4A8DEE169",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3559,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:19.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "0E21AEB5-3E79-47BF-86E1-978346EDC0A9",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3560,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:20.341Z",
+		"integrations": {}
+	}, {
+		"messageId": "F8A223AA-0E7B-4619-8743-F4A753FFC5E1",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3561,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:21.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "FE7CF790-A2D6-44F0-9BF9-7D5FC2AFBA3A",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3562,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36284510.456128135,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:22.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "97D41A0E-9678-44BA-9401-F56DBA1A2C2F",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3553,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 35963605.857505053,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:23.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "4A562E3C-0F2C-4B14-8CB3-E7E8D2244AFC",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3554,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:24.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "F603033E-7E9A-4356-BA45-771CBA1D4097",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3555,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:25.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "A0E0A177-677F-436D-929E-0381122BE395",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3556,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:26.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "238B2600-89D8-4FC2-A67B-69AF232B98AA",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3557,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:27.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "F43CFCCE-E676-4026-A816-AE9C1F4ED177",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3558,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:28.342Z",
+		"integrations": {}
+	}, {
+		"messageId": "2FCCEA77-7DFF-48D3-A652-01AFF374437E",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3559,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:29.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "C2655524-8C76-4604-9F0C-ACD7B25CD540",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3560,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:30.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "ECD19325-2572-4E99-9657-BC0B96718428",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3561,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:31.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "16F64D7C-6F60-42C3-BBE2-14004AC96CC3",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3562,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 36206075.108642787,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:32.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "2D315BA5-6E43-48ED-B17C-3049988F65EA",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3553,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37259236.791976117,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:33.340Z",
+		"integrations": {}
+	}, {
+		"messageId": "A9C650E5-801F-44F9-BF4D-90E9A0A48942",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3554,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:34.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "EA335034-67D4-4FF9-8591-412A1506A6B5",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3555,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:35.340Z",
+		"integrations": {}
+	}, {
+		"messageId": "12C08FA3-9F57-426F-9917-7071478529B1",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3556,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:36.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "E1972083-E7AC-4B06-B6B6-81FB752575F2",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3557,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:37.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "34117CC8-6A69-4483-BF63-6F3F3F68431C",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3558,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:38.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "550E928C-7848-4F7C-B632-41DF9F85B314",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3559,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:39.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "21A521EC-60A0-484B-A381-B14D37A11A20",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3560,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:40.340Z",
+		"integrations": {}
+	}, {
+		"messageId": "C540B502-EE48-4096-A096-F9F2C0E5B970",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3561,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:41.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "A2C71872-123C-4842-A089-6CA6A0ED2B0D",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3562,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37188985.061726339,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:42.338Z",
+		"integrations": {}
+	}, {
+		"messageId": "4A21F285-9732-45D0-8A6D-17A5B1566223",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3553,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 37833364.192006409,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:43.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "D58CC5D5-C711-455A-BDC2-20DA02991822",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3554,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 38175897.339730881,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:44.339Z",
+		"integrations": {}
+	}, {
+		"messageId": "356B81F1-963B-4594-B436-24A78D3D8131",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3555,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 38175897.339730881,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:45.338Z",
+		"integrations": {}
+	}],
+	"sentAt": "2018-09-07T17:06:46.149Z"
+}

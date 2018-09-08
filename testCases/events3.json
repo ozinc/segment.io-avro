@@ -1,0 +1,3580 @@
+{
+	"batch": [{
+		"messageId": "0EF80AF0-D085-4A6A-A95F-DCD3B613E776",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2491.3190917960001,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:52.378Z",
+		"integrations": {}
+	}, {
+		"messageId": "CE1686CE-C40D-44F7-8753-500D8D5D5D63",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Resumed",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2491.3190917960001,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:52.387Z",
+		"integrations": {}
+	}, {
+		"messageId": "843EFE34-395F-4D58-9E25-7105A9FCFC8F",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 2490,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 0,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:52.896Z",
+		"integrations": {}
+	}, {
+		"messageId": "5044C8AF-6107-491D-ADEB-4268FAC107F1",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Completed",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2490,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:53.289Z",
+		"integrations": {}
+	}, {
+		"messageId": "EE2F9F09-BB56-4261-B140-E8A839C704AA",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 2490,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 0,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:53.321Z",
+		"integrations": {}
+	}, {
+		"messageId": "AE2E60B1-B045-47C6-B0ED-6544B26E9857",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 2490,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 0,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:53.322Z",
+		"integrations": {}
+	}, {
+		"messageId": "EE0BD910-2D75-4270-AC66-88AB5943F5C4",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 2491,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 26086242.382140394,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:54.601Z",
+		"integrations": {}
+	}, {
+		"messageId": "3D74CED2-3A00-41C6-A4CF-DB8BB48CE600",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Paused",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2491.2160111111111,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 27825364.316442143,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:54.824Z",
+		"integrations": {}
+	}, {
+		"messageId": "B110C2CC-9941-4B18-BAF2-390B36122E6F",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2491.2160111111111,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 22427329.743396703,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:54.878Z",
+		"integrations": {}
+	}, {
+		"messageId": "31373060-74BF-476E-BB6A-8FD78C28460B",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2497.998046875,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 23674277.677230626,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:54.934Z",
+		"integrations": {}
+	}, {
+		"messageId": "EF13AA8A-1DB2-4CCD-B66F-3E31499FA596",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2497.998046875,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 25231445.754883457,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:54.999Z",
+		"integrations": {}
+	}, {
+		"messageId": "C7EF64F1-2B9E-4F8E-9CA8-26E396EE9576",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2497.998046875,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.018Z",
+		"integrations": {}
+	}, {
+		"messageId": "D8343AE0-7582-4C7F-B002-2170C2C77670",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2618.2224121089998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.026Z",
+		"integrations": {}
+	}, {
+		"messageId": "5DC4BF02-7E18-4C0D-BFA3-7F9F6FB85E4C",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2761.8239746089998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.033Z",
+		"integrations": {}
+	}, {
+		"messageId": "39517A67-97E7-41A1-B440-6A3A194CFEA6",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2761.8239746089998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.040Z",
+		"integrations": {}
+	}, {
+		"messageId": "EC3290AE-266D-4D4A-B383-62418524A94A",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2888.7275390619998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.045Z",
+		"integrations": {}
+	}, {
+		"messageId": "17F990BF-5BD3-4708-9792-C3F310F9224B",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2888.7275390619998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.056Z",
+		"integrations": {}
+	}, {
+		"messageId": "B5E27935-8D07-49AB-A15B-6066FA8A6766",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2948.8395996089998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.062Z",
+		"integrations": {}
+	}, {
+		"messageId": "34F608CE-F35C-4C35-9072-C8185A77A54D",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 2948.8395996089998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.068Z",
+		"integrations": {}
+	}, {
+		"messageId": "AA8BEED9-C189-4FDB-9C12-D639C0C4A9AF",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3216.0056152339998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.079Z",
+		"integrations": {}
+	}, {
+		"messageId": "A4F788C9-2BB5-4449-B197-B9255386C1AA",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3216.0056152339998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.084Z",
+		"integrations": {}
+	}, {
+		"messageId": "C3427D3F-E07B-4DFE-9994-A295F3C3FA00",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3342.9091796869998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.090Z",
+		"integrations": {}
+	}, {
+		"messageId": "3941018C-E5D8-423A-BEA8-AC13C003137F",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3486.5107421869998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.100Z",
+		"integrations": {}
+	}, {
+		"messageId": "98B7444F-F52A-4D7F-BFB9-FEC96F8A196A",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3486.5107421869998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.106Z",
+		"integrations": {}
+	}, {
+		"messageId": "5D06D35D-CD64-4E55-808E-E5A652672880",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3486.5107421869998,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.114Z",
+		"integrations": {}
+	}, {
+		"messageId": "C166982C-9981-4304-AD68-DEE33C12F9C5",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Resumed",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3570,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.122Z",
+		"integrations": {}
+	}, {
+		"messageId": "44BCBE61-C2BB-4FA0-95AF-5014BF5BDFBA",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 5243361.7600785159,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:55.912Z",
+		"integrations": {}
+	}, {
+		"messageId": "BB0D1C25-625E-4507-8B02-9196AA903043",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Completed",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3570,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 15392861.381665124,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:56.202Z",
+		"integrations": {}
+	}, {
+		"messageId": "A58F727F-A929-4070-8878-457E925B3A13",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 16170269.849677457,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:56.232Z",
+		"integrations": {}
+	}, {
+		"messageId": "895B9443-7C3F-4C2D-BF5B-A70B0700D2F7",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 16238025.559547871,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:56.234Z",
+		"integrations": {}
+	}, {
+		"messageId": "3E4BE664-AB84-40B7-89A4-08F305D79612",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 3561,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 39092344.868275523,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:57.513Z",
+		"integrations": {}
+	}, {
+		"messageId": "475D60AA-63C9-4F4B-8040-E70DD2521112",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 3562,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 36965812.179051779,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:58.513Z",
+		"integrations": {}
+	}, {
+		"messageId": "84E67D82-B9C2-4C24-BBA0-961B907D1645",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"podId": "None",
+			"position": 3563,
+			"title": "Símamyndasmiðir",
+			"episode": "5",
+			"airdate": "Wednesday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"bitrate": 38572505.360398792,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:59.514Z",
+		"integrations": {}
+	}, {
+		"messageId": "75405868-6D7A-495E-9140-7A4C29ECCE4E",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Paused",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3563.5391444444444,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 39834288.061938591,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:00.072Z",
+		"integrations": {}
+	}, {
+		"messageId": "4C10547C-FEDE-4492-A619-4D8A9F08865D",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:06:00.603Z",
+		"name": "Home",
+		"integrations": {}
+	}, {
+		"messageId": "1343540A-B252-4C1E-AA57-FBCDA081C62E",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Product Clicked",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"product_id": "5efc1223-fe56-4177-a1a8-04c4c5e7ba8c",
+			"quantity": 1,
+			"category": "Slot",
+			"position": 1,
+			"image_url": "inapplicable",
+			"sku": "inapplicable",
+			"price": 0,
+			"variant": "regular",
+			"brand": "RÚV",
+			"name": "Frjálsar íþróttir",
+			"url": "inapplicable"
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:02.149Z",
+		"integrations": {}
+	}, {
+		"messageId": "2983992F-DA46-481E-B7FC-DBCFBA95A9C3",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:06:02.861Z",
+		"name": "PlayableInfo",
+		"integrations": {}
+	}, {
+		"messageId": "FC79C38F-70EA-4E39-BF65-F5B3723DAE8A",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Product Viewed",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"product_id": "5efc1223-fe56-4177-a1a8-04c4c5e7ba8c",
+			"quantity": 1,
+			"category": "Slot",
+			"position": 0,
+			"image_url": "inapplicable",
+			"sku": "inapplicable",
+			"price": 0,
+			"variant": "regular",
+			"brand": "RÚV",
+			"name": "Frjálsar íþróttir",
+			"url": "inapplicable"
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:02.862Z",
+		"integrations": {}
+	}, {
+		"messageId": "11332F46-AACF-4996-A413-E659E3C36621",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3570,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:03.276Z",
+		"integrations": {}
+	}, {
+		"messageId": "46917773-AD27-480E-A254-54612C9480A3",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3570,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 0,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:03.306Z",
+		"integrations": {}
+	}, {
+		"messageId": "7E15D33E-AE64-4F71-90F7-7670FE6BEC44",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3570,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 0,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:03.310Z",
+		"integrations": {}
+	}, {
+		"messageId": "4D2B4013-82A6-41C0-A7C4-D0EA1B0530F4",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3570,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 31518270.990817834,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:04.585Z",
+		"integrations": {}
+	}, {
+		"messageId": "5D2556CE-2943-4F77-AC51-D166609270F7",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"podId": "None",
+			"position": 3570,
+			"title": "Frjálsar íþróttir",
+			"episode": "1",
+			"airdate": "Sunday",
+			"publisher": "Missing",
+			"fullEpisode": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"bitrate": 35736073.043226071,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Bein útsending frá keppni í frjálsum íþróttum á Meistaramóti Evrópu."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.586Z",
+		"integrations": {}
+	}, {
+		"messageId": "DB886E48-376F-4881-B741-283C2A756A1A",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Paused",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3570,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 35736073.043226071,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.705Z",
+		"integrations": {}
+	}, {
+		"messageId": "3225D92F-149A-4AD7-892E-B73F7F9AE4C6",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3570,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.729Z",
+		"integrations": {}
+	}, {
+		"messageId": "08A43A8C-9F19-40E8-941C-DF98C6E78782",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3560,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.737Z",
+		"integrations": {}
+	}, {
+		"messageId": "3B692D95-93C2-437E-88D3-174C10781861",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3563.3208007809999,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.747Z",
+		"integrations": {}
+	}, {
+		"messageId": "FE8C311D-4573-41D2-80D6-CBD27A20C461",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3563.3208007809999,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.757Z",
+		"integrations": {}
+	}, {
+		"messageId": "394E8869-4C10-462E-9059-688C6EE767CA",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3563.3208007809999,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.767Z",
+		"integrations": {}
+	}, {
+		"messageId": "13E8991C-ACC1-4B7D-AE1C-7C42CD1C08E2",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3563.3208007809999,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.782Z",
+		"integrations": {}
+	}, {
+		"messageId": "EE6BA80B-EFEB-4A9D-A6F0-37E57D951CF8",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3563.3208007809999,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.790Z",
+		"integrations": {}
+	}, {
+		"messageId": "3C7FA257-27F8-4316-A110-C631F773940A",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3536.6042480460001,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.800Z",
+		"integrations": {}
+	}, {
+		"messageId": "BD197B24-3416-4B4F-BC36-27E122D80A84",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3536.6042480460001,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.807Z",
+		"integrations": {}
+	}, {
+		"messageId": "D18EA31E-4D2B-4AEB-9C60-DED3EC087BA8",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3459.7939453119998,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.815Z",
+		"integrations": {}
+	}, {
+		"messageId": "ACCEE571-85DE-4622-B621-2DF6E44C20C2",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3459.7939453119998,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.826Z",
+		"integrations": {}
+	}, {
+		"messageId": "55B3D9E9-866B-4266-A0F9-516558E23FDC",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3299.4943847650002,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.842Z",
+		"integrations": {}
+	}, {
+		"messageId": "E5493632-D6DA-43A8-8EE2-43E0D63FD309",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3299.4943847650002,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.851Z",
+		"integrations": {}
+	}, {
+		"messageId": "F66FA1F5-BA35-493D-A9A9-7B0C897155B2",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3249.4008789059999,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.864Z",
+		"integrations": {}
+	}, {
+		"messageId": "4893AF3D-94CF-4534-AC97-9F4E31E55376",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3122.4975585930001,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.873Z",
+		"integrations": {}
+	}, {
+		"messageId": "F4234F0C-DBCF-4EEE-97B5-96133A9B9BFC",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3122.4975585930001,
+			"full_screen": false,
+			"content_asset_id": "43252629-3b2e-410a-8b87-7959228c66e8",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/27c1820d-dba1-426e-941b-1d9402aa1e72\/streamUrl",
+			"session_id": "27c1820d-dba1-426e-941b-1d9402aa1e72",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:06:05.881Z",
+		"integrations": {}
+	}],
+	"sentAt": "2018-09-07T17:06:05.894Z"
+}

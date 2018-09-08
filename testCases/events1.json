@@ -1,0 +1,1091 @@
+{
+	"batch": [{
+		"messageId": "7F2F6011-E0F2-4109-A5C8-2ED58E491630",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"device": {
+				"manufacturer": "Apple",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+				"model": "x86_64"
+			},
+			"locale": "en-US",
+			"library": {
+				"version": "3.6.9",
+				"name": "analytics-ios"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"version": "2.0.3",
+				"name": "OZ Live"
+			},
+			"os": {
+				"version": "11.4",
+				"name": "iOS"
+			},
+			"screen": {
+				"height": 812,
+				"width": 375
+			},
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"publisher": "Missing",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"bitrate": 39191029.599063277,
+			"airdate": "Wednesday",
+			"episode": "5",
+			"podId": "None",
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"fullEpisode": false,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:01.573Z",
+		"integrations": {}
+	}, {
+		"messageId": "E6694608-45BB-4859-BDBF-F7FA3147C393",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"device": {
+				"manufacturer": "Apple",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+				"model": "x86_64"
+			},
+			"locale": "en-US",
+			"library": {
+				"version": "3.6.9",
+				"name": "analytics-ios"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"version": "2.0.3",
+				"name": "OZ Live"
+			},
+			"os": {
+				"version": "11.4",
+				"name": "iOS"
+			},
+			"screen": {
+				"height": 812,
+				"width": 375
+			},
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"publisher": "Missing",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"bitrate": 39191029.599063277,
+			"airdate": "Wednesday",
+			"episode": "5",
+			"podId": "None",
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"fullEpisode": false,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:02.573Z",
+		"integrations": {}
+	}, {
+		"messageId": "FA44B0E4-DE57-4EEB-B761-C9017A3A60A5",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"device": {
+				"manufacturer": "Apple",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+				"model": "x86_64"
+			},
+			"locale": "en-US",
+			"library": {
+				"version": "3.6.9",
+				"name": "analytics-ios"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"version": "2.0.3",
+				"name": "OZ Live"
+			},
+			"os": {
+				"version": "11.4",
+				"name": "iOS"
+			},
+			"screen": {
+				"height": 812,
+				"width": 375
+			},
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"publisher": "Missing",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"bitrate": 39191029.599063277,
+			"airdate": "Wednesday",
+			"episode": "5",
+			"podId": "None",
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"fullEpisode": false,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:03.573Z",
+		"integrations": {}
+	}, {
+		"messageId": "42DA058F-8943-4142-8692-5868F5FA592B",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Content Playing",
+		"context": {
+			"device": {
+				"manufacturer": "Apple",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+				"model": "x86_64"
+			},
+			"locale": "en-US",
+			"library": {
+				"version": "3.6.9",
+				"name": "analytics-ios"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"version": "2.0.3",
+				"name": "OZ Live"
+			},
+			"os": {
+				"version": "11.4",
+				"name": "iOS"
+			},
+			"screen": {
+				"height": 812,
+				"width": 375
+			},
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"assetId": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"publisher": "Missing",
+			"position": 3570,
+			"title": "Símamyndasmiðir",
+			"bitrate": 39191029.599063277,
+			"airdate": "Wednesday",
+			"episode": "5",
+			"podId": "None",
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"fullEpisode": false,
+			"livestream": true,
+			"channel": "RÚV",
+			"totalLength": 3570,
+			"keywords": [],
+			"sessionId": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"season": "0",
+			"program": "Missing",
+			"genre": "Missing",
+			"framerate": 0,
+			"description": "Norskir þættir þar sem sex þátttakendur keppast um að taka bestu myndirnar á farsímana sína. Þeir fá nýjar áskoranir í hverjum þætti og áhorfendur fá ýmis ráð sem þeir geta sjálfir nýtt sér þegar þeir taka myndir á símana sína. e."
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:04.573Z",
+		"integrations": {}
+	}, {
+		"messageId": "63A84609-BAC7-4DFE-A819-BB5C018184EF",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Application Opened",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"build": "476",
+			"referring_application": "",
+			"from_background": false,
+			"url": "",
+			"version": "2.0.3"
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:16.148Z",
+		"integrations": {}
+	}, {
+		"messageId": "796B93DD-BCB4-49F8-B02A-CD3B8EC1548B",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"traits": {},
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"type": "identify",
+		"timestamp": "2018-09-07T17:05:17.004Z",
+		"integrations": {}
+	}, {
+		"messageId": "18108756-8BE8-4770-AF03-5754EF293565",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:17.478Z",
+		"name": "Home",
+		"integrations": {}
+	}, {
+		"messageId": "5EC1D63A-1582-48A7-B552-3F443AD64797",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:29.085Z",
+		"name": "Browse",
+		"integrations": {}
+	}, {
+		"messageId": "4A6E45E3-B9A2-47C1-AF59-8D478EC55231",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:29.715Z",
+		"name": "Schedule",
+		"integrations": {}
+	}, {
+		"messageId": "14632F52-453E-4A5C-9CEE-5F5269D9EE38",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:30.257Z",
+		"name": "Search",
+		"integrations": {}
+	}, {
+		"messageId": "6C8B8672-F0FE-4A0E-8F76-F503ADD13868",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:30.908Z",
+		"name": "About",
+		"integrations": {}
+	}, {
+		"messageId": "AE237D14-2403-4479-B0F7-D0904F7641FF",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:32.579Z",
+		"name": "Settings",
+		"integrations": {}
+	}, {
+		"messageId": "115DCC71-F0DA-477F-B471-5A56BA103C86",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:34.283Z",
+		"name": "Search",
+		"integrations": {}
+	}, {
+		"messageId": "A8EE95B2-9A31-4F5C-A3D6-78A76C858E20",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:34.335Z",
+		"name": "Schedule",
+		"integrations": {}
+	}, {
+		"messageId": "6552AEE5-F86F-4174-A23F-F07301D4C253",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:34.387Z",
+		"name": "Browse",
+		"integrations": {}
+	}, {
+		"messageId": "B147B043-F894-47EE-ABB5-C489874E82AC",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:34.434Z",
+		"name": "Home",
+		"integrations": {}
+	}, {
+		"messageId": "167388A4-E60B-46B5-98F2-5E5D76DF9B16",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:36.221Z",
+		"name": "UserProfile",
+		"integrations": {}
+	}, {
+		"messageId": "3A7CDC53-164D-4517-8338-FEAA9E0E2EE3",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:39.196Z",
+		"name": "Services",
+		"integrations": {}
+	}, {
+		"messageId": "CF00ECC5-8607-4D77-A675-4E5FEF4C2783",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Product Clicked",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"product_id": "9f16f362-abad-4042-9e26-a69759347bd9",
+			"quantity": 1,
+			"category": "Channel",
+			"position": 2,
+			"image_url": "http:\/\/res.cloudinary.com\/oz\/image\/upload\/\/v1528809815\/ruv_tpw6jr.png",
+			"sku": "ruv",
+			"price": 0,
+			"variant": "inapplicable",
+			"brand": "RÚV",
+			"name": "RÚV",
+			"url": "inapplicable"
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:41.441Z",
+		"integrations": {}
+	}, {
+		"messageId": "98C09BE5-9270-435D-B260-7F31463B49A6",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Product Clicked",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"product_id": "607d2cbf-74ae-41d1-8ccb-c082351b049d",
+			"quantity": 1,
+			"category": "Slot",
+			"position": 0,
+			"image_url": "inapplicable",
+			"sku": "inapplicable",
+			"price": 0,
+			"variant": "regular",
+			"brand": "RÚV",
+			"name": "Símamyndasmiðir",
+			"url": "inapplicable"
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:44.994Z",
+		"integrations": {}
+	}, {
+		"messageId": "C8EC7E9D-C4A9-40C5-822A-DF53D4F708E4",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {},
+		"type": "screen",
+		"timestamp": "2018-09-07T17:05:45.763Z",
+		"name": "PlayableInfo",
+		"integrations": {}
+	}, {
+		"messageId": "5A7DF724-5470-44CF-BB2D-E62E72D7999C",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Product Viewed",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"product_id": "607d2cbf-74ae-41d1-8ccb-c082351b049d",
+			"quantity": 1,
+			"category": "Slot",
+			"position": 0,
+			"image_url": "inapplicable",
+			"sku": "inapplicable",
+			"price": 0,
+			"variant": "regular",
+			"brand": "RÚV",
+			"name": "Símamyndasmiðir",
+			"url": "inapplicable"
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:45.764Z",
+		"integrations": {}
+	}, {
+		"messageId": "D815BA00-3671-4DAC-B5D3-68E11775F91E",
+		"anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+		"userId": "ac717dcb-4bae-4557-b47e-4d6eca7e263b",
+		"event": "Video Playback Started",
+		"context": {
+			"screen": {
+				"width": 375,
+				"height": 812
+			},
+			"device": {
+				"manufacturer": "Apple",
+				"model": "x86_64",
+				"id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6"
+			},
+			"os": {
+				"name": "iOS",
+				"version": "11.4"
+			},
+			"app": {
+				"build": "476",
+				"namespace": "com.ozinc.oz",
+				"name": "OZ Live",
+				"version": "2.0.3"
+			},
+			"library": {
+				"name": "analytics-ios",
+				"version": "3.6.9"
+			},
+			"locale": "en-US",
+			"timezone": "Atlantic\/Reykjavik",
+			"traits": {},
+			"network": {
+				"cellular": false,
+				"wifi": true
+			}
+		},
+		"properties": {
+			"method": "none",
+			"ad_pod_id": "None",
+			"quality": "Missing",
+			"sound": 1,
+			"position": 3570,
+			"full_screen": false,
+			"content_asset_id": "2a3809b8-b455-45f5-aacc-55cb47898f53",
+			"ad_type": "none",
+			"video_player": "AVPLayer",
+			"livestream": true,
+			"content_pod_id": "None",
+			"bitrate": 0,
+			"ad_enabled": false,
+			"streamUrl": "https:\/\/core.oz.com\/channels\/9f16f362-abad-4042-9e26-a69759347bd9\/streams\/4ddfe38e-63b0-4781-bebb-b47c60596348\/streamUrl",
+			"session_id": "4ddfe38e-63b0-4781-bebb-b47c60596348",
+			"ad_asset_id": "Inapplicable",
+			"total_length": 3570,
+			"framerate": 0
+		},
+		"type": "track",
+		"timestamp": "2018-09-07T17:05:46.127Z",
+		"integrations": {}
+	}],
+	"sentAt": "2018-09-07T17:05:46.148Z"
+}
