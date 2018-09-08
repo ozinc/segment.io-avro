@@ -12,6 +12,17 @@
       "doc": "A pseudo-unique substitute for a User ID, for cases when you don\\’t have an absolutely unique identifier"
     },
     {
+      "name": "traits",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "string"
+        }
+      ],
+      "doc": "Dictionary of traits of the current user. This is useful in cases where you need to track an event, but also associate information from a previous identify call"
+    },
+    {
       "name": "context",
       "type": [
         "null",
@@ -137,6 +148,13 @@
               ]
             },
             {
+              "name": "brand",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
               "name": "url",
               "type": [
                 "null",
@@ -183,7 +201,7 @@
               "name": "build",
               "type": [
                 "null",
-                "int"
+                "string"
               ]
             },
             {
@@ -197,7 +215,7 @@
               "name": "previous_build",
               "type": [
                 "null",
-                "int"
+                "string"
               ]
             },
             {
@@ -291,7 +309,7 @@
               "name": "bitrate",
               "type": [
                 "null",
-                "int"
+                "double"
               ]
             },
             {
@@ -338,40 +356,29 @@
             {
               "name": "content_pod_id",
               "type": [
-                "string",
-                "null"
+                "null",
+                "string"
               ]
             },
             {
               "name": "ad_asset_id",
               "type": [
                 "null",
-                {
-                  "type": "array",
-                  // Only accept array here, JSON accepts flat string too
-                  "items": "string"
-                }
+                "string"
               ]
             },
             {
               "name": "ad_pod_id",
               "type": [
                 "null",
-                {
-                  "type": "array",
-                  // Only accept array here, JSON accepts flat string too
-                  "items": "string"
-                }
+                "string"
               ]
             },
             {
               "name": "ad_type",
               "type": [
                 "null",
-                {
-                  "type": "array",
-                  "items": "AdType"
-                }
+                "AdType"
               ]
             },
             {
@@ -425,6 +432,70 @@
             },
             {
               "name": "method",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "sku",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "product_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "variant",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "quantity",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "price",
+              "type": [
+                "null",
+                "float"
+              ]
+            },
+            {
+              "name": "category",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "Product category being viewed"
+            },
+            {
+              "name": "streamUrl",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "image_url",
               "type": [
                 "null",
                 "string"
@@ -919,7 +990,7 @@
       "name": "bitrate",
       "type": [
         "null",
-        "int"
+        "double"
       ]
     },
     {

@@ -25,6 +25,13 @@
               "type": "string"
             },
             {
+              "name": "namespace",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
               "name": "version",
               "type": "string"
             },
@@ -74,37 +81,55 @@
       "name": "device",
       "doc": "Dictionary of information about the device, containing id, manufacturer, model, name, type and version",
       "type": [
+        "null",
         {
           "type": "record",
           "name": "Device",
           "fields": [
             {
               "name": "id",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "manufacturer",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "model",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "name",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "type",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "version",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             }
           ]
-        },
-        "null"
+        }
       ]
     },
     {
@@ -139,8 +164,8 @@
     {
       "name": "locale",
       "type": [
-        "string",
-        "null"
+        "null",
+        "string"
       ],
       "doc": "Locale string for the current user, for example en-US"
     },
@@ -148,6 +173,7 @@
       "name": "location",
       "doc": "Dictionary of information about the user\\’s current location, containing city, country, latitude, longitude, region and speed",
       "type": [
+        "null",
         {
           "type": "record",
           "name": "Location",
@@ -178,8 +204,7 @@
               //TODO: This is probably good enough as float?
             }
           ]
-        },
-        "null"
+        }
       ]
     },
     {
@@ -192,19 +217,31 @@
           "fields": [
             {
               "name": "bluetooth",
-              "type": "boolean"
+              "type": [
+                "null",
+                "boolean"
+              ]
             },
             {
               "name": "carrier",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "cellular",
-              "type": "boolean"
+              "type": [
+                "null",
+                "boolean"
+              ]
             },
             {
               "name": "wifi",
-              "type": "boolean"
+              "type": [
+                "null",
+                "boolean"
+              ]
             }
           ]
         },
@@ -315,7 +352,10 @@
           "fields": [
             {
               "name": "density",
-              "type": "int"
+              "type": [
+                "null",
+                "int"
+              ]
             },
             {
               "name": "height",
@@ -349,7 +389,10 @@
       "name": "traits",
       "type": [
         "null",
-        "string"
+        {
+          "type": "map",
+          "values": "string"
+        }
       ],
       "doc": "Dictionary of traits of the current user. This is useful in cases where you need to track an event, but also associate information from a previous identify call"
     },

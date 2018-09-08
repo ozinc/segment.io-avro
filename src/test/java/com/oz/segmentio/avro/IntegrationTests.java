@@ -1,7 +1,9 @@
 package com.oz.segmentio.avro;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.common.io.Resources;
 import com.oz.segmentio.json.JsonToAvroUtils;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.file.DirectoryStream;
@@ -11,7 +13,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import org.apache.avro.Schema;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.assertj.core.api.Assertions;
@@ -40,31 +46,33 @@ public final class IntegrationTests {
                 directoryStream.forEach(file -> {
                     if (file.toString().endsWith(".json")) {
                         try {
-                            String type = typeFromJsonFile(file);
-                            Assertions.assertThat(
-                                schemata.stream().filter(
-                                    cls -> {
-                                        Schema schema;
-                                        try {
-                                            schema = extractSchema(cls);
-                                        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-                                            throw new AssertionError(
-                                                "Extracting schema from AVRO class failed, " +
-                                                    "this is likely an issue with the AVRO dependency itself.",
-                                                e
-                                            );
+                            for (byte[] raw : maybeFlattenBatch(Files.readAllBytes(file))) {
+                                String type = typeFromJsonFile(raw);
+                                Assertions.assertThat(
+                                    schemata.stream().filter(
+                                        cls -> {
+                                            Schema schema;
+                                            try {
+                                                schema = extractSchema(cls);
+                                            } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
+                                                throw new AssertionError(
+                                                    "Extracting schema from AVRO class failed, " +
+                                                        "this is likely an issue with the AVRO dependency itself.",
+                                                    e
+                                                );
+                                            }
+                                            if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
+                                                return false;
+                                            }
+                                            try {
+                                                assertFullCycle(schema, cls, new ByteArrayInputStream(raw));
+                                                return true;
+                                            } catch (Exception ignored) {
+                                                return false;
+                                            }
                                         }
-                                        if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
-                                            return false;
-                                        }
-                                        try {
-                                            assertFullCycle(file, schema, cls);
-                                            return true;
-                                        } catch (Exception ignored) {
-                                            return false;
-                                        }
-                                    }
-                                ).findFirst()).isPresent();
+                                    ).findFirst()).isPresent();
+                            }
                         } catch (AssertionError | IOException e) {
                             throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
                         }
@@ -74,12 +82,36 @@ public final class IntegrationTests {
         }
     }
 
-    private static String typeFromJsonFile(Path file) throws IOException {
-        Map<String, Object> map = TestUtil.OBJECT_MAPPER.readerFor(Map.class).readValue(file.toFile());
-        if (map == null) {
-            fail("Could not read map from [" + file + "].");
+    private static Iterable<byte[]> maybeFlattenBatch(byte[] raw) throws IOException {
+        Map<String, Object> map = bytesToMap(raw);
+        if (map.containsKey("batch")) {
+            Map<String, Object> commonAttributes = new HashMap<>(map);
+            commonAttributes.remove("batch");
+            @SuppressWarnings("unchecked")
+            List<Map<String, Object>> events = (List<Map<String, Object>>) map.get("batch");
+            return events.stream().map(event -> {
+                Map<String, Object> enriched = new HashMap<>(event);
+                enriched.putAll(commonAttributes);
+                try {
+                    return TestUtil.OBJECT_MAPPER.writerFor(Map.class).writeValueAsBytes(enriched);
+                } catch (JsonProcessingException e) {
+                    throw new IllegalArgumentException("Could not serialize enriched event", e);
+                }
+            }).collect(Collectors.toList());
         }
-        return (String) map.get("type");
+        return Collections.singletonList(raw);
+    }
+
+    private static String typeFromJsonFile(byte[] raw) throws IOException {
+        return (String) bytesToMap(raw).get("type");
+    }
+
+    private static Map<String, Object> bytesToMap(byte[] raw) throws IOException {
+        Map<String, Object> map = TestUtil.OBJECT_MAPPER.readerFor(Map.class).readValue(raw);
+        if (map == null) {
+            throw new IllegalArgumentException("Could not read JSON map.");
+        }
+        return map;
     }
 
     private static Schema extractSchema(Class<? extends SpecificRecordBase> cls)

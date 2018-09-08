@@ -4,10 +4,8 @@ import com.fasterxml.jackson.dataformat.avro.AvroMapper;
 import com.fasterxml.jackson.dataformat.avro.AvroSchema;
 import com.oz.segmentio.json.JsonToAvroUtils;
 import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -314,13 +312,7 @@ public final class FullCycleTests {
         }
     }
 
-    public static void assertFullCycle(Path file, Schema avro, Class<?> clazz) throws IOException {
-        try (InputStream input = new FileInputStream(file.toFile())) {
-            assertFullCycle(avro, clazz, input);
-        }
-    }
-
-    private static void assertFullCycle(final Schema avro, final Class<?> clazz, final InputStream input) throws IOException {
+    public static void assertFullCycle(final Schema avro, final Class<?> clazz, final InputStream input) throws IOException {
         @SuppressWarnings("unchecked") final Map<String, Object> data = JsonToAvroUtils.sanitizeNumericTypes(
             avro,
             JsonToAvroUtils.sanitizeJsonKeysDeep(TestUtil.OBJECT_MAPPER.readValue(input, Map.class))

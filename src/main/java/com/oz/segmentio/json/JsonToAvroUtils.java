@@ -43,7 +43,7 @@ public final class JsonToAvroUtils {
         Map<String, Object> result = new HashMap<>();
         map.forEach(
             (key, value) -> result.put(
-                key.replaceAll(" ", ESCAPED_SPACE),
+                maybeRenameKey(key.replaceAll(" ", ESCAPED_SPACE)),
                 value instanceof Map ? sanitizeJsonKeysDeep((Map<String, Object>) value) : value
             )
         );
@@ -75,6 +75,8 @@ public final class JsonToAvroUtils {
                     } else if (key.endsWith("_date")) {
                         //TODO: This is very hacky, identify date fields more safely by type lookup from some provided metadata
                         result.put(key, ISODateTimeFormat.dateTimeNoMillis().print(((Number) value).longValue()));
+                    } else if (unionType == Schema.Type.STRING) {
+                        result.put(key, String.valueOf(value));
                     } else {
                         throw new IllegalArgumentException(
                             "Numeric type sanitization for non numeric union type not supported yet."
@@ -116,8 +118,10 @@ public final class JsonToAvroUtils {
                             "Numeric type sanitization for nested [" + elementSchema + "] in [ARRAY] not yet supported."
                         );
                     }
-                } else if (nestedType == Schema.Type.ENUM || nestedType == Schema.Type.BOOLEAN) {
+                } else if (nestedType == Schema.Type.BOOLEAN) {
                     result.put(key, value);
+                } else if (nestedType == Schema.Type.ENUM) {
+                    result.put(key, value instanceof Enum ? value : stringToEnum((String) value));
                 } else {
                     throw new IllegalArgumentException(
                         "Numeric type sanitization for nested [" + nestedType + "] not yet supported."
@@ -215,12 +219,31 @@ public final class JsonToAvroUtils {
                 return AdType.POST_ROLL;
             case "pre-roll":
                 return AdType.PRE_ROLL;
+            case "none":
+                return AdType.NONE;
             case "dynamic":
                 return AdEventLoadType.DYNAMIC;
             case "linear":
                 return AdEventLoadType.LINEAR;
             default:
                 throw new IllegalArgumentException("Unknown ENUM value [" + string + "]");
+        }
+    }
+
+    private static String maybeRenameKey(String key) {
+        switch (key) {
+            case "sessionId":
+                return "session_id";
+            case "fullEpisode":
+                return "full_episode";
+            case "totalLength":
+                return "total_length";
+            case "podId":
+                return "pod_id";
+            case "assetId":
+                return "asset_id";
+            default:
+                return key;
         }
     }
 }

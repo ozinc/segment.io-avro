@@ -128,7 +128,7 @@
               "name": "build",
               "type": [
                 "null",
-                "int"
+                "string"
               ],
               "doc": "The build number of the installed app."
             },

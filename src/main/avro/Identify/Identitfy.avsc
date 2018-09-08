@@ -106,7 +106,10 @@
         "fields": [
           {
             "name": "address",
-            "type": "Address",
+            "type": [
+              "null",
+              "Address"
+            ],
             "doc": "Street address of a user optionally containing: city, country, postalCode, state or street"
           },
           {
