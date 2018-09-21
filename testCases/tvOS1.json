@@ -503,6 +503,419 @@
       "receivedAt": "2018-09-20T11:48:44.745Z",
       "sentAt": "2018-09-20T11:48:44.063Z",
       "originalTimestamp": "2018-09-20T11:31:40.239Z"
+    },
+    {
+      "anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+      "context": {
+        "app": {
+          "build": "479",
+          "name": "OZ Live",
+          "namespace": "com.ozinc.oz",
+          "version": "2.0.6"
+        },
+        "device": {
+          "adTrackingEnabled": true,
+          "advertisingId": "9F3D67FE-55DC-47C0-AC08-0B50E163DEC1",
+          "id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "iOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 812,
+          "width": 375
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "event": "Video Content Playing",
+      "integrations": {},
+      "messageId": "05B08D94-3E8A-4266-BE48-F712BD73A5E8",
+      "properties": {
+        "airdate": "Thursday",
+        "asset_id": "952a4fda-7f8d-413c-bb81-5df11bd61099",
+        "bitrate_C74": 231693.47761197932,
+        "channel": "RÚV",
+        "description": "Norskur myndaflokkur þar sem fylgst er með venjulegu fólki sem er svo ástríðufullt í áhugamálum sínum að það liggur við brjálæði.  Þáttastjórnandinn Are Sande Olsen tekur viðtöl við fólk með ótrúlegustu áhugamál og skoðar þau ofan í kjölinn. e.",
+        "duration_watched_SEC": 49.23266100883484,
+        "episode": "4",
+        "framerate_HTZ": 0,
+        "full_episode": false,
+        "indicated_bitrate_C74": 6150.733,
+        "keywords": [],
+        "livestream": true,
+        "number_of_bytes_transferred_AD": 53494736,
+        "number_of_dropped_video_frames_C62": 0,
+        "number_of_stalls_C62": 0,
+        "observed_bitrate_C74": 231693.47761197932,
+        "pod_id": "None",
+        "position": 49.192280142,
+        "season": "0",
+        "segments_downloaded_duration_SEC": 90,
+        "session_id": "790D3217-D8B2-494D-BF0B-01F20209392C",
+        "stream_url": "https://d54ncncg5b9ab.cloudfront.net/live/4ddfe38e-63b0-4781-bebb-b47c60596348/5000/playlist.m3u8?limit=3&ssl=true",
+        "switch_bitrate_C74": -0.001,
+        "title": "Venjulegt brjálæði",
+        "total_length_SEC": "nan",
+        "transfer_duration_SEC": 3.451114839
+      },
+      "timestamp": "2018-09-20T14:19:37.838Z",
+      "type": "track",
+      "userId": "e86415c7-5ea1-4a30-a34c-6abedbcc038a",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T14:19:46.977Z",
+      "sentAt": "2018-09-20T14:19:46.882Z",
+      "originalTimestamp": "2018-09-20T14:19:37.743Z"
+    },
+    {
+      "anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+      "context": {
+        "app": {
+          "build": "479",
+          "name": "OZ Live",
+          "namespace": "com.ozinc.oz",
+          "version": "2.0.6"
+        },
+        "device": {
+          "adTrackingEnabled": true,
+          "advertisingId": "9F3D67FE-55DC-47C0-AC08-0B50E163DEC1",
+          "id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "iOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 812,
+          "width": 375
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "integrations": {},
+      "messageId": "5098573D-620F-4745-A624-08AB2D6CEA70",
+      "name": "PlayableInfo",
+      "properties": {},
+      "timestamp": "2018-09-20T14:18:48.345Z",
+      "type": "screen",
+      "userId": "e86415c7-5ea1-4a30-a34c-6abedbcc038a",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T14:19:16.977Z",
+      "sentAt": "2018-09-20T14:19:16.882Z",
+      "originalTimestamp": "2018-09-20T14:18:48.250Z"
+    },
+    {
+      "anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+      "context": {
+        "app": {
+          "build": "479",
+          "name": "OZ Live",
+          "namespace": "com.ozinc.oz",
+          "version": "2.0.6"
+        },
+        "device": {
+          "adTrackingEnabled": true,
+          "advertisingId": "9F3D67FE-55DC-47C0-AC08-0B50E163DEC1",
+          "id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "iOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 812,
+          "width": 375
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "event": "Video Playback Started",
+      "integrations": {},
+      "messageId": "B47F2405-9549-4D88-A42D-DB72C439BBBA",
+      "properties": {
+        "ad_enabled": false,
+        "ad_pod_id": "None",
+        "ad_type": "none",
+        "bitrate_C74": 0,
+        "content_asset_id": "952a4fda-7f8d-413c-bb81-5df11bd61099",
+        "content_pod_id": "None",
+        "duration_watched_SEC": 0,
+        "framerate_HTZ": 0,
+        "full_screen": false,
+        "indicated_bitrate_C74": 0,
+        "livestream": false,
+        "method": "none",
+        "number_of_bytes_transferred_AD": 0,
+        "number_of_dropped_video_frames_C62": 0,
+        "number_of_stalls_C62": 0,
+        "observed_bitrate_C74": 0,
+        "position": 0,
+        "segments_downloaded_duration_SEC": 0,
+        "sound": 0,
+        "switch_bitrate_C74": 0,
+        "total_length_SEC": "nan",
+        "transfer_duration_SEC": 0,
+        "video_player": "AVPlayer"
+      },
+      "timestamp": "2018-09-20T14:18:48.161Z",
+      "type": "track",
+      "userId": "e86415c7-5ea1-4a30-a34c-6abedbcc038a",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T14:19:16.977Z",
+      "sentAt": "2018-09-20T14:19:16.882Z",
+      "originalTimestamp": "2018-09-20T14:18:48.066Z"
+    },
+    {
+      "anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+      "context": {
+        "app": {
+          "build": "479",
+          "name": "OZ Live",
+          "namespace": "com.ozinc.oz",
+          "version": "2.0.6"
+        },
+        "device": {
+          "adTrackingEnabled": true,
+          "advertisingId": "9F3D67FE-55DC-47C0-AC08-0B50E163DEC1",
+          "id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "iOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 812,
+          "width": 375
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "integrations": {},
+      "messageId": "4CF20AFF-D9B6-4203-8AEB-82329CF398C4",
+      "name": "Services",
+      "properties": {},
+      "timestamp": "2018-09-20T14:18:39.924Z",
+      "type": "screen",
+      "userId": "e86415c7-5ea1-4a30-a34c-6abedbcc038a",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T14:18:47.593Z",
+      "sentAt": "2018-09-20T14:18:46.882Z",
+      "originalTimestamp": "2018-09-20T14:18:39.213Z"
+    },
+    {
+      "anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+      "context": {
+        "app": {
+          "build": "479",
+          "name": "OZ Live",
+          "namespace": "com.ozinc.oz",
+          "version": "2.0.6"
+        },
+        "device": {
+          "adTrackingEnabled": true,
+          "advertisingId": "9F3D67FE-55DC-47C0-AC08-0B50E163DEC1",
+          "id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "iOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 812,
+          "width": 375
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "integrations": {},
+      "messageId": "17815138-0474-4E98-93FD-6C2703E03666",
+      "name": "Schedule",
+      "properties": {},
+      "timestamp": "2018-09-20T14:18:25.203Z",
+      "type": "screen",
+      "userId": "e86415c7-5ea1-4a30-a34c-6abedbcc038a",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T14:18:47.593Z",
+      "sentAt": "2018-09-20T14:18:46.882Z",
+      "originalTimestamp": "2018-09-20T14:18:24.492Z"
+    },
+    {
+      "anonymousId": "23D01FC6-8940-4ACF-858F-00A52567AC2D",
+      "context": {
+        "app": {
+          "build": "258",
+          "name": "",
+          "namespace": "com.ozinc.oz",
+          "version": "1.6.51"
+        },
+        "device": {
+          "id": "246F2F08-2E72-4BDF-9A39-BE1EC86AFD65",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "tvOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 1080,
+          "width": 1920
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "event": "Application Opened",
+      "integrations": {},
+      "messageId": "3B5949ED-FC59-4C55-AFB6-26A7238604B9",
+      "properties": {
+        "build": "258",
+        "from_background": false,
+        "referring_application": "",
+        "url": "",
+        "version": "1.6.51"
+      },
+      "timestamp": "2018-09-20T11:11:11.500Z",
+      "type": "track",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T11:11:29.146Z",
+      "sentAt": "2018-09-20T11:11:28.464Z",
+      "originalTimestamp": "2018-09-20T11:11:10.818Z"
+    },
+    {
+      "anonymousId": "01E2B555-F7F2-4A90-AC5F-203AC21C90BE",
+      "context": {
+        "app": {
+          "build": "479",
+          "name": "OZ Live",
+          "namespace": "com.ozinc.oz",
+          "version": "2.0.6"
+        },
+        "device": {
+          "adTrackingEnabled": true,
+          "advertisingId": "9F3D67FE-55DC-47C0-AC08-0B50E163DEC1",
+          "id": "A7164CBD-F343-4166-9E3A-110E06A9EDF6",
+          "manufacturer": "Apple",
+          "model": "x86_64",
+          "type": "ios"
+        },
+        "library": {
+          "name": "analytics-ios",
+          "version": "3.6.9"
+        },
+        "locale": "en-US",
+        "network": {
+          "cellular": false,
+          "wifi": true
+        },
+        "os": {
+          "name": "iOS",
+          "version": "11.4"
+        },
+        "screen": {
+          "height": 812,
+          "width": 375
+        },
+        "timezone": "Atlantic/Reykjavik",
+        "traits": {},
+        "ip": "89.160.161.248"
+      },
+      "event": "Product Clicked",
+      "integrations": {},
+      "messageId": "A5C4B58B-B3A0-4CF3-AA35-A368D9E72373",
+      "properties": {
+        "brand": "RÚV",
+        "category": "Channel",
+        "image_url": "http://res.cloudinary.com/oz/image/upload//v1528809815/ruv_tpw6jr.png",
+        "name": "RÚV",
+        "position": 0,
+        "price": 0,
+        "product_id": "9f16f362-abad-4042-9e26-a69759347bd9",
+        "quantity": 1,
+        "sku": "ruv"
+      },
+      "timestamp": "2018-09-20T14:30:06.588Z",
+      "type": "track",
+      "userId": "e86415c7-5ea1-4a30-a34c-6abedbcc038a",
+      "writeKey": "rcKHus2mvacPcXvLWvosYUUmNCtDI9ea",
+      "receivedAt": "2018-09-20T14:30:36.190Z",
+      "sentAt": "2018-09-20T14:30:36.095Z",
+      "originalTimestamp": "2018-09-20T14:30:06.493Z"
     }
-
   ]}
