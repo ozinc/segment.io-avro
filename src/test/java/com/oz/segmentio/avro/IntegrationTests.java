@@ -50,7 +50,8 @@ public final class IntegrationTests {
                         try {
                             for (byte[] raw : maybeFlattenBatch(Files.readAllBytes(file))) {
                                 String type = typeFromJsonFile(raw);
-                                schemata.stream().filter(
+                                String jsonString = new String(raw, StandardCharsets.UTF_8);
+                                List<Class<?>> matched = schemata.stream().filter(
                                     cls -> {
                                         Schema schema;
                                         try {
@@ -69,23 +70,11 @@ public final class IntegrationTests {
                                             try {
                                                 assertFullCycle(schema, cls, new ByteArrayInputStream(raw));
                                             } catch (Throwable t) {
-                                                boolean isTracking = Tracking.class.equals(cls);
-                                                if (type != null && type.equals(schema.getProp("_type")) || isTracking) {
-                                                    final List<String> problems = new ArrayList<>();
-                                                    if (t instanceof JsonMappingException) {
-                                                        problems.add(t.getMessage());
-                                                    }
-                                                    try {
-                                                        normalizedJSON(schema, raw);
-                                                    } catch (SchemaIncompatibilityException e) {
-                                                        problems.add(e.getMessage());
-                                                    }
-                                                    throw new AssertionError(
-                                                        "JSON: \n"
-                                                            + new String(raw, StandardCharsets.UTF_8)
-                                                            + "\nShould have matched [" + (isTracking ? "Tracking" : type) + "] but the following problems were found:\n"
-                                                            + String.join("\n", problems)
-                                                    );
+                                                boolean isTrackingSchema = Tracking.class.equals(cls);
+                                                // If this schema should have matched we try to get a more descriptive error message,
+                                                // otherwise we just pass the given Throwable up the stack.
+                                                if (type != null && type.equals(schema.getProp("_type")) || (isTrackingType(raw) && isTrackingSchema)) {
+                                                    failWithProblemMessage(t, raw, schema, type, isTrackingSchema);
                                                 } else {
                                                     throw t;
                                                 }
@@ -95,9 +84,24 @@ public final class IntegrationTests {
                                             return false;
                                         }
                                     }
-                                ).findFirst().orElseThrow(
-                                    () -> new AssertionError("Failed to find schema for:\n" + new String(raw, StandardCharsets.UTF_8))
-                                );
+                                ).collect(Collectors.toList());
+                                if (matched.isEmpty()) {
+                                    throw new AssertionError("Failed to find schema for:\n" + jsonString);
+                                } else if (isTrackingType(raw) && !"track".equals(type)) {
+                                    if (matched.size() == 1) {
+                                        if (!matched.contains(Tracking.class)) {
+                                            throw new AssertionError(
+                                                "Failed to find correctly identify schema for:\n" + jsonString +
+                                                    "\nGeneric Tracking schema did not match but type [" + type + "] was found to be of 'track' type."
+                                            );
+                                        }
+                                    } else if (matched.size() != 2) {
+                                        throw new AssertionError(
+                                            "Found more than 2 schemata for:\n" + jsonString +
+                                                "\nbut only 2 should have been found for identified type [" + type + "] (Tracking and type specific schema)."
+                                        );
+                                    }
+                                }
                             }
                         } catch (AssertionError | IOException e) {
                             throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
@@ -108,10 +112,35 @@ public final class IntegrationTests {
         }
     }
 
-    public static Map<String, Object> normalizedJSON(Schema avro, byte[] raw) throws IOException {
-        return JsonToAvroUtils.sanitizeNumericTypes(
-            avro,
-            JsonToAvroUtils.sanitizeJsonKeysDeep(TestUtil.OBJECT_MAPPER.readValue(raw, Map.class))
+    /**
+     * Identify what lead to the given {@link Throwable} and throw a more descriptive error.
+     * @param t Throwable that was caught
+     * @param raw Raw JSON bytes
+     * @param schema Schema that should have matched
+     * @param type Type deduced from the JSON bytes
+     * @param isTrackingSchema Whether or not this is a 'track' type schema
+     * @throws IOException On Failure to deserialize JSON bytes (should be impossible)
+     */
+    private static void failWithProblemMessage(Throwable t, byte[] raw, Schema schema, String type,
+        boolean isTrackingSchema) throws IOException {
+        final List<String> problems = new ArrayList<>();
+        if (t instanceof JsonMappingException) {
+            problems.add(t.getMessage());
+        }
+        try {
+            @SuppressWarnings("unchecked")
+            Map<String, Object> map = TestUtil.OBJECT_MAPPER.readValue(raw, Map.class);
+            JsonToAvroUtils.normalizedJSON(schema, map);
+        } catch (SchemaIncompatibilityException e) {
+            problems.add(e.getMessage());
+        }
+        throw new AssertionError(
+            "JSON: \n"
+                + new String(raw, StandardCharsets.UTF_8)
+                + "\nShould have matched ["
+                + (isTrackingSchema ? "Tracking (generic type)" : type)
+                + "] but the following problems were found:\n"
+                + String.join("\n", problems)
         );
     }
 
@@ -133,6 +162,12 @@ public final class IntegrationTests {
             }).collect(Collectors.toList());
         }
         return Collections.singletonList(raw);
+    }
+
+    private static boolean isTrackingType(byte[] raw) throws IOException {
+        Map<String, Object> asMap = bytesToMap(raw);
+        String type = (String) asMap.get("type");
+        return "track".equals(type);
     }
 
     private static String typeFromJsonFile(byte[] raw) throws IOException {
