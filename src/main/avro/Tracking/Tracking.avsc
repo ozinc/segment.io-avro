@@ -132,6 +132,15 @@
           "name": "TrackingProperties",
           "fields": [
             {
+              "name": "query",
+              "type": [
+                "null",
+                "string"
+              ],
+              //TODO: This can also be an object according to the docs, find out the exact structure and see if string is sufficient here
+              "doc": "Query the user searched with"
+            },
+            {
               "name": "revenue",
               "type": [
                 "null",

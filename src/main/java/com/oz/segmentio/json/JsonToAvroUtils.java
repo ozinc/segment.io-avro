@@ -27,6 +27,13 @@ public final class JsonToAvroUtils {
         // Utility Class
     }
 
+    public static Map<String, Object> normalizedJSON(Schema avro, Map<String, Object> raw) {
+        return JsonToAvroUtils.sanitizeNumericTypes(
+            avro,
+            JsonToAvroUtils.sanitizeJsonKeysDeep(raw)
+        );
+    }
+
     public static Collection<Class<? extends SpecificRecordBase>> allSchemata() {
         Reflections reflections = new Reflections("com.oz.segmentio.avro");
         return reflections.getSubTypesOf(SpecificRecordBase.class);
@@ -39,7 +46,7 @@ public final class JsonToAvroUtils {
      * @return Map with sanitized keys
      */
     @SuppressWarnings("unchecked")
-    public static Map<String, Object> sanitizeJsonKeysDeep(Map<String, Object> map) {
+    private static Map<String, Object> sanitizeJsonKeysDeep(Map<String, Object> map) {
         Map<String, Object> result = new HashMap<>();
         map.forEach(
             (key, value) -> result.put(
@@ -62,7 +69,7 @@ public final class JsonToAvroUtils {
      * @return Map with numeric types adjusted
      */
     @SuppressWarnings("unchecked")
-    public static Map<String, Object> sanitizeNumericTypes(Schema avro, Map<String, Object> map) {
+    private static Map<String, Object> sanitizeNumericTypes(Schema avro, Map<String, Object> map) {
         Map<String, Object> result = new HashMap<>();
         map.forEach((key, value) -> {
             Schema.Field relevantField = avro.getField(key);

@@ -313,9 +313,8 @@ public final class FullCycleTests {
     }
 
     public static void assertFullCycle(final Schema avro, final Class<?> clazz, final InputStream input) throws IOException {
-        @SuppressWarnings("unchecked") final Map<String, Object> data = JsonToAvroUtils.sanitizeNumericTypes(
-            avro,
-            JsonToAvroUtils.sanitizeJsonKeysDeep(TestUtil.OBJECT_MAPPER.readValue(input, Map.class))
+        @SuppressWarnings("unchecked") final Map<String, Object> data = JsonToAvroUtils.normalizedJSON(
+            avro, TestUtil.OBJECT_MAPPER.readValue(input, Map.class)
         );
         AvroSchema schema = new AvroSchema(avro);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
