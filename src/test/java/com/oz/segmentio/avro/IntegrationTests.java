@@ -1,11 +1,14 @@
 package com.oz.segmentio.avro;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.google.common.io.Resources;
 import com.oz.segmentio.json.JsonToAvroUtils;
+import com.oz.segmentio.json.SchemaIncompatibilityException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -20,7 +23,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import org.apache.avro.Schema;
 import org.apache.avro.specific.SpecificRecordBase;
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import static com.oz.segmentio.avro.FullCycleTests.assertFullCycle;
@@ -48,30 +50,54 @@ public final class IntegrationTests {
                         try {
                             for (byte[] raw : maybeFlattenBatch(Files.readAllBytes(file))) {
                                 String type = typeFromJsonFile(raw);
-                                Assertions.assertThat(
-                                    schemata.stream().filter(
-                                        cls -> {
-                                            Schema schema;
-                                            try {
-                                                schema = extractSchema(cls);
-                                            } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-                                                throw new AssertionError(
-                                                    "Extracting schema from AVRO class failed, " +
-                                                        "this is likely an issue with the AVRO dependency itself.",
-                                                    e
-                                                );
-                                            }
-                                            if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
-                                                return false;
-                                            }
+                                schemata.stream().filter(
+                                    cls -> {
+                                        Schema schema;
+                                        try {
+                                            schema = extractSchema(cls);
+                                        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
+                                            throw new AssertionError(
+                                                "Extracting schema from AVRO class failed, " +
+                                                    "this is likely an issue with the AVRO dependency itself.",
+                                                e
+                                            );
+                                        }
+                                        if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
+                                            return false;
+                                        }
+                                        try {
                                             try {
                                                 assertFullCycle(schema, cls, new ByteArrayInputStream(raw));
-                                                return true;
-                                            } catch (Exception ignored) {
-                                                return false;
+                                            } catch (Throwable t) {
+                                                boolean isTracking = Tracking.class.equals(cls);
+                                                if (type != null && type.equals(schema.getProp("_type")) || isTracking) {
+                                                    final List<String> problems = new ArrayList<>();
+                                                    if (t instanceof JsonMappingException) {
+                                                        problems.add(t.getMessage());
+                                                    }
+                                                    try {
+                                                        normalizedJSON(schema, raw);
+                                                    } catch (SchemaIncompatibilityException e) {
+                                                        problems.add(e.getMessage());
+                                                    }
+                                                    throw new AssertionError(
+                                                        "JSON: \n"
+                                                            + new String(raw, StandardCharsets.UTF_8)
+                                                            + "\nShould have matched [" + (isTracking ? "Tracking" : type) + "] but the following problems were found:\n"
+                                                            + String.join("\n", problems)
+                                                    );
+                                                } else {
+                                                    throw t;
+                                                }
                                             }
+                                            return true;
+                                        } catch (Exception ignored) {
+                                            return false;
                                         }
-                                    ).findFirst()).isPresent();
+                                    }
+                                ).findFirst().orElseThrow(
+                                    () -> new AssertionError("Failed to find schema for:\n" + new String(raw, StandardCharsets.UTF_8))
+                                );
                             }
                         } catch (AssertionError | IOException e) {
                             throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
@@ -80,6 +106,13 @@ public final class IntegrationTests {
                 });
             }
         }
+    }
+
+    public static Map<String, Object> normalizedJSON(Schema avro, byte[] raw) throws IOException {
+        return JsonToAvroUtils.sanitizeNumericTypes(
+            avro,
+            JsonToAvroUtils.sanitizeJsonKeysDeep(TestUtil.OBJECT_MAPPER.readValue(raw, Map.class))
+        );
     }
 
     private static Iterable<byte[]> maybeFlattenBatch(byte[] raw) throws IOException {
@@ -103,7 +136,12 @@ public final class IntegrationTests {
     }
 
     private static String typeFromJsonFile(byte[] raw) throws IOException {
-        return (String) bytesToMap(raw).get("type");
+        Map<String, Object> asMap = bytesToMap(raw);
+        String type = (String) asMap.get("type");
+        if ("track".equals(type) && asMap.containsKey("event")) {
+            type = (String) asMap.get("event");
+        }
+        return type;
     }
 
     private static Map<String, Object> bytesToMap(byte[] raw) throws IOException {

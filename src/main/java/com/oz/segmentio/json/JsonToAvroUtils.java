@@ -66,6 +66,9 @@ public final class JsonToAvroUtils {
         Map<String, Object> result = new HashMap<>();
         map.forEach((key, value) -> {
             Schema.Field relevantField = avro.getField(key);
+            if (relevantField == null) {
+                throw new SchemaIncompatibilityException("Found key [" + key + "] in JSON data but it's not part of the AVRO schema.");
+            }
             Schema.Type relevantType = relevantField.schema().getType();
             if (value instanceof Number) {
                 if (relevantType == Schema.Type.UNION) {

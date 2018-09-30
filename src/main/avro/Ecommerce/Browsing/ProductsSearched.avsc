@@ -2,6 +2,7 @@
   "namespace": "com.oz.segmentio.avro",
   "type": "record",
   "name": "ProductsSearched",
+  "_type": "Product Searched",
   "fields": [
     {
       "name": "anonymousId",
@@ -64,6 +65,14 @@
       "doc": "Timestamp when the message itself took place, defaulted to the current time by the Segment Tracking API. It is an ISO-8601 date string. If the event just happened, leave it out and we’ll use the server’s time. If you’re importing data from the past, make sure you to provide a timestamp."
     },
     {
+      "name": "originalTimestamp",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Used by Segment to calculate timestamp. Note: originalTimestamp is not useful for analysis since it’s not always trustworthy as it can be easily adjusted and affected by clock skew."
+    },
+    {
       "name": "type",
       "type": [
         "null",
@@ -87,12 +96,37 @@
       ],
       "doc": "Version of the Tracking API that received the message, automatically set by Segment."
     },
+    {
+      "name": "event",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Name of the action that a user has performed."
+    },
+    {
+      "name": "writeKey",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Not documented, only found in test data."
+    },
     /* ========================= Specific fields start below =================== */
     {
-      "name": "query",
-      "type": "string",
-      //TODO: This can also be an object according to the docs, find out the exact structure and see if string is sufficient here
-      "doc": "Query the user searched with"
+      "name": "properties",
+      "type": {
+        "type": "record",
+        "name": "ProductSearchedProperties",
+        "fields": [
+          {
+            "name": "query",
+            "type": "string",
+            //TODO: This can also be an object according to the docs, find out the exact structure and see if string is sufficient here
+            "doc": "Query the user searched with"
+          }
+        ]
+      }
     }
   ]
 }

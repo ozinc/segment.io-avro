@@ -87,11 +87,15 @@
       ],
       "doc": "Version of the Tracking API that received the message, automatically set by Segment."
     },
-    /* ========================= Specific fields start below =================== */
     {
       "name": "event",
-      "type": "string"
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Name of the action that a user has performed."
     },
+    /* ========================= Specific fields start below =================== */
     {
       "name": "properties",
       "type": {

@@ -93,6 +93,14 @@
       "type": "string",
       "doc": "Order/transaction ID"
     },
+    {
+      "name": "event",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Name of the action that a user has performed."
+    },
     /* ========================= Included fields from OrderCompleted =================== */
     {
       "name": "checkout_id",

@@ -88,6 +88,14 @@
       ],
       "doc": "Version of the Tracking API that received the message, automatically set by Segment."
     },
+    {
+      "name": "event",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Name of the action that a user has performed."
+    },
     /* ========================= Specific fields start below =================== */
     {
       "name": "checkout_id",
