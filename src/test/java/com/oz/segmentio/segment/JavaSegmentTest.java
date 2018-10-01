@@ -11,6 +11,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 
@@ -55,27 +57,54 @@ public final class JavaSegmentTest {
                 .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
         );
 
-        for (int i = 0; i<50; i++) {
-            MessageBuilder track = TrackMessage
-                    .builder("Clicked CTA")
-                    .userId("f4ca124298")
-                    .anonymousId("smeom")
-                    .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
-                    .properties(ImmutableMap.of("location", "header","type", "button"));
+        Map<String, Object> props = new HashMap<>();
+        props.putAll(ImmutableMap.of(
+                "product_id", "507f1f77bcf86cd799439011",
+                "sku", "G-32",
+                "category","Games",
+                "name","Monopoly: 3rd Edition",
+                "brand", "'Hasbro"));
+        props.putAll(ImmutableMap.of(
+                "variant","200 pieces",
+                "price", 18.99,
+                "quantity", 1,
+                "coupon","MAYDEALS",
+                "position", 3));
+        props.putAll(ImmutableMap.of(
+                "revenue",1,
+                "currency","USD",
+                "value",1.3,
+                "url","https://www.example.com/product/path'",
+                "image_url","https://www.example.com/product/path.jpg"));
 
-            analytics.enqueue(track);
+        MessageBuilder purchase = TrackMessage
+                .builder("Product Clicked")
+                .userId("f4ca124298")
+                .anonymousId("smeom")
+                .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
+                .properties(props);
 
-            /*
-            MessageBuilder message = TrackMessage.builder("Schedule")
-                    .userId("f4ca124298")
-                    .enableIntegration("AS",true)
-                    .properties(ImmutableMap.of("category", "Sports","path", "/sports/schedule"))
-                    .context(ImmutableMap.of())
-                    .anonymousId("smeom");
-            analytics.enqueue(message);
-            */
+        analytics.enqueue(purchase);
 
-        }
+        MessageBuilder track = TrackMessage
+                .builder("Clicked CTA")
+                .userId("f4ca124298")
+                .anonymousId("smeom")
+                .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
+                .properties(ImmutableMap.of("location", "header","type", "button"));
+
+        analytics.enqueue(track);
+
+        /*
+        MessageBuilder message = TrackMessage.builder("Schedule")
+                .userId("f4ca124298")
+                .enableIntegration("AS",true)
+                .properties(ImmutableMap.of("category", "Sports","path", "/sports/schedule"))
+                .context(ImmutableMap.of())
+                .anonymousId("smeom");
+        analytics.enqueue(message);
+        */
+
         analytics.flush();
         blockingFlush.block();
         analytics.shutdown();
