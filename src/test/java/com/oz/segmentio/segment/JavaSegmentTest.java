@@ -68,15 +68,6 @@ public final class JavaSegmentTest {
             analytics.enqueue(message);
         }
 
-        MessageBuilder track = TrackMessage
-                .builder("Clicked CTA")
-                .userId("f4ca124298")
-                .anonymousId("smeom")
-                .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
-                .properties(ImmutableMap.of("location", "header","type", "button"));
-
-        analytics.enqueue(track);
-
         analytics.flush();
         blockingFlush.block();
         analytics.shutdown();
@@ -94,9 +85,9 @@ public final class JavaSegmentTest {
         product1Props.put("variant","Free Trial");  //Full, Free Trial
         product1Props.put("coupon","SKJW96KJSB");   //Discount or access coupon used to get access
         product1Props.put("quantity",1);  //Quantity bought
-        product1Props.put("price",0);     //The dollar price of paid
+        product1Props.put("price",0);     //price of individual units
         product1Props.put("currency","USD");     //Any other hypothetical monetary value (Like the full PPV price of a match)
-        product1Props.put("value",0);     //quantity * price
+        product1Props.put("value",0);     //Total value of this line (quantity * price)
 
         messages.add(TrackMessage.builder("Product Clicked")
                 .userId("f4ca124298")
@@ -111,9 +102,9 @@ public final class JavaSegmentTest {
         product2Props.put("category","League Pass"); //League Pass, Event Pass, Service Subscription, Organization Subscription
         product2Props.put("variant","Full");  //Full, Free Trial
         product2Props.put("quantity",1);  //Quantity bought
-        product2Props.put("price",50);     //The dollar price of paid
+        product2Props.put("price",50);     //price of individual units
         product2Props.put("currency","USD");     //Any other hypothetical monetary value (Like the full PPV price of a match)
-        product2Props.put("value",50);     //Any other hypothetical monetary value (Like the full PPV price of a match)
+        product2Props.put("value",50);     //Total value of this line (quantity * price)
 
         messages.add(TrackMessage.builder("Product Clicked")
                 .userId("f4ca124298")
@@ -125,13 +116,13 @@ public final class JavaSegmentTest {
         orderProps.put("order_id","O82738383");
         orderProps.put("affiliation","web");//Where was this sold
         orderProps.put("total",54);       //total after cost
-        orderProps.put("shipping",2);     //sold
-        orderProps.put("tax",2);          //sold
-        orderProps.put("discount",2);     //sold
-        orderProps.put("revenue",50);     //sold
+        orderProps.put("shipping",2);     //what is charged for shipping
+        orderProps.put("tax",2);          //how high is the tax added to revenue
+        orderProps.put("discount",2);     //how much is the discount given much of revenue
+        orderProps.put("revenue",50);     //What is the amount sold for -cost
         orderProps.put("coupon","N/A");   //sold
-        orderProps.put("currency","USD"); //sold
-        orderProps.put("products", Arrays.asList(product1Props, product2Props)); //sold
+        orderProps.put("currency","USD"); //In what currency is the sale
+        orderProps.put("products", Arrays.asList(product1Props, product2Props)); //List of sold products (See above)
 
         messages.add(TrackMessage.builder("Order Completed")
                 .userId("f4ca124298")
