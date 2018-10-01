@@ -1,146 +1,133 @@
 {
   "batch": [
     {
-      "anonymousId": "smeom",
+      "type": "identify",
+      "messageId": "eb18c7ba-327e-4b60-9008-9d7928389d96",
+      "timestamp": "2018-10-01T12:51:02.946Z",
       "context": {
         "app": {
           "name": "Segment"
-        },
-        "library": {
-          "name": "analytics-java",
-          "version": "2.1.1"
         }
       },
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
       "integrations": {},
-      "messageId": "eb18c7ba-327e-4b60-9008-9d7928389d96",
-      "timestamp": "2018-10-01T12:51:04.158Z",
       "traits": {
-        "email": "mbolton@initech.com",
-        "name": "Michael Bolton"
-      },
-      "type": "identify",
-      "userId": "f4ca124298",
-      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
-      "receivedAt": "2018-10-01T12:51:04.161Z",
-      "sentAt": "2018-10-01T12:51:02.949Z",
-      "originalTimestamp": "2018-10-01T12:51:02.946Z"
+        "name": "Michael Bolton",
+        "email": "mbolton@initech.com"
+      }
     },
     {
-      "anonymousId": "smeom",
-      "event": "Product Clicked",
-      "integrations": {},
-      "messageId": "87b0b2c4-e405-4731-a6b9-f246a3b044dd",
-      "properties": {
-        "brand": "UEFA",
-        "category": "League Pass",
-        "currency": "USD",
-        "name": "UEFA Championship League Pass for 2018-109",
-        "price": 50,
-        "product_id": "82738383",
-        "quantity": 1,
-        "value": 50,
-        "variant": "Full"
-      },
-      "timestamp": "2018-10-01T12:51:04.160Z",
       "type": "track",
-      "userId": "f4ca124298",
-      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
-      "receivedAt": "2018-10-01T12:51:04.161Z",
-      "sentAt": "2018-10-01T12:51:02.949Z",
-      "context": {
-        "library": {
-          "name": "analytics-java",
-          "version": "2.1.1"
-        }
-      },
-      "originalTimestamp": "2018-10-01T12:51:02.948Z"
-    },
-    {
-      "anonymousId": "smeom",
-      "event": "Product Clicked",
-      "integrations": {},
       "messageId": "8dfffd37-b099-447b-af24-42c19e94b45f",
+      "timestamp": "2018-10-01T12:51:02.948Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Clicked",
       "properties": {
-        "brand": "UEFA Champions League",
-        "category": "Event Pass",
+        "quantity": 1,
         "coupon": "SKJW96KJSB",
-        "currency": "USD",
-        "name": "Liverpool vs. Manchester Unites (CL 2018)",
         "price": 0,
         "product_id": "82738387",
-        "quantity": 1,
-        "value": 0,
-        "variant": "Free Trial"
-      },
-      "timestamp": "2018-10-01T12:51:04.160Z",
-      "type": "track",
-      "userId": "f4ca124298",
-      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
-      "receivedAt": "2018-10-01T12:51:04.161Z",
-      "sentAt": "2018-10-01T12:51:02.949Z",
-      "context": {
-        "library": {
-          "name": "analytics-java",
-          "version": "2.1.1"
-        }
-      },
-      "originalTimestamp": "2018-10-01T12:51:02.948Z"
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "variant": "Free Trial",
+        "currency": "USD",
+        "category": "Event Pass",
+        "brand": "UEFA Champions League",
+        "value": 0
+      }
     },
     {
+      "type": "track",
+      "messageId": "87b0b2c4-e405-4731-a6b9-f246a3b044dd",
+      "timestamp": "2018-10-01T12:51:02.948Z",
       "anonymousId": "smeom",
-      "event": "Order Completed",
+      "userId": "f4ca124298",
       "integrations": {},
-      "messageId": "1ae45f68-efa1-4f44-8b91-a6343ade8971",
+      "event": "Product Clicked",
       "properties": {
-        "affiliation": "web",
-        "coupon": "N/A",
+        "quantity": 1,
+        "price": 50,
+        "product_id": "82738383",
+        "name": "UEFA Championship League Pass for 2018-109",
+        "variant": "Full",
         "currency": "USD",
+        "category": "League Pass",
+        "brand": "UEFA",
+        "value": 50
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "1ae45f68-efa1-4f44-8b91-a6343ade8971",
+      "timestamp": "2018-10-01T12:51:02.948Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Order Completed",
+      "properties": {
+        "total": 54,
+        "revenue": 50,
+        "shipping": 2,
+        "coupon": "N/A",
+        "affiliation": "web",
         "discount": 2,
+        "tax": 2,
+        "currency": "USD",
         "order_id": "O82738383",
         "products": [
           {
-            "brand": "UEFA Champions League",
-            "category": "Event Pass",
+            "quantity": 1,
             "coupon": "SKJW96KJSB",
-            "currency": "USD",
-            "name": "Liverpool vs. Manchester Unites (CL 2018)",
             "price": 0,
             "product_id": "82738387",
-            "quantity": 1,
-            "value": 0,
-            "variant": "Free Trial"
+            "name": "Liverpool vs. Manchester Unites (CL 2018)",
+            "variant": "Free Trial",
+            "currency": "USD",
+            "category": "Event Pass",
+            "brand": "UEFA Champions League",
+            "value": 0
           },
           {
-            "brand": "UEFA",
-            "category": "League Pass",
-            "currency": "USD",
-            "name": "UEFA Championship League Pass for 2018-109",
+            "quantity": 1,
             "price": 50,
             "product_id": "82738383",
-            "quantity": 1,
-            "value": 50,
-            "variant": "Full"
+            "name": "UEFA Championship League Pass for 2018-109",
+            "variant": "Full",
+            "currency": "USD",
+            "category": "League Pass",
+            "brand": "UEFA",
+            "value": 50
           }
-        ],
-        "revenue": 50,
-        "shipping": 2,
-        "tax": 2,
-        "total": 54
-      },
-      "timestamp": "2018-10-01T12:51:04.160Z",
+        ]
+      }
+    },
+    {
       "type": "track",
-      "userId": "f4ca124298",
-      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
-      "receivedAt": "2018-10-01T12:51:04.161Z",
-      "sentAt": "2018-10-01T12:51:02.949Z",
+      "messageId": "0f210bd2-3d9c-444e-ac5d-275709129534",
+      "timestamp": "2018-10-01T12:51:02.949Z",
       "context": {
-        "library": {
-          "name": "analytics-java",
-          "version": "2.1.1"
+        "app": {
+          "name": "Segment"
         }
       },
-      "originalTimestamp": "2018-10-01T12:51:02.948Z"
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Clicked CTA",
+      "properties": {
+        "location": "header",
+        "type": "button"
+      }
     }
   ],
-  "sentAt": "2018-10-01T12:51:03.008Z"
+  "sentAt": "2018-10-01T12:51:02.949Z",
+  "context": {
+    "library": {
+      "name": "analytics-java",
+      "version": "2.1.1"
+    }
+  },
+  "sequence": 1
 }
