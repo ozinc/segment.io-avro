@@ -1,0 +1,146 @@
+{
+  "batch": [
+    {
+      "anonymousId": "smeom",
+      "context": {
+        "app": {
+          "name": "Segment"
+        },
+        "library": {
+          "name": "analytics-java",
+          "version": "2.1.1"
+        }
+      },
+      "integrations": {},
+      "messageId": "eb18c7ba-327e-4b60-9008-9d7928389d96",
+      "timestamp": "2018-10-01T12:51:04.158Z",
+      "traits": {
+        "email": "mbolton@initech.com",
+        "name": "Michael Bolton"
+      },
+      "type": "identify",
+      "userId": "f4ca124298",
+      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
+      "receivedAt": "2018-10-01T12:51:04.161Z",
+      "sentAt": "2018-10-01T12:51:02.949Z",
+      "originalTimestamp": "2018-10-01T12:51:02.946Z"
+    },
+    {
+      "anonymousId": "smeom",
+      "event": "Product Clicked",
+      "integrations": {},
+      "messageId": "87b0b2c4-e405-4731-a6b9-f246a3b044dd",
+      "properties": {
+        "brand": "UEFA",
+        "category": "League Pass",
+        "currency": "USD",
+        "name": "UEFA Championship League Pass for 2018-109",
+        "price": 50,
+        "product_id": "82738383",
+        "quantity": 1,
+        "value": 50,
+        "variant": "Full"
+      },
+      "timestamp": "2018-10-01T12:51:04.160Z",
+      "type": "track",
+      "userId": "f4ca124298",
+      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
+      "receivedAt": "2018-10-01T12:51:04.161Z",
+      "sentAt": "2018-10-01T12:51:02.949Z",
+      "context": {
+        "library": {
+          "name": "analytics-java",
+          "version": "2.1.1"
+        }
+      },
+      "originalTimestamp": "2018-10-01T12:51:02.948Z"
+    },
+    {
+      "anonymousId": "smeom",
+      "event": "Product Clicked",
+      "integrations": {},
+      "messageId": "8dfffd37-b099-447b-af24-42c19e94b45f",
+      "properties": {
+        "brand": "UEFA Champions League",
+        "category": "Event Pass",
+        "coupon": "SKJW96KJSB",
+        "currency": "USD",
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "price": 0,
+        "product_id": "82738387",
+        "quantity": 1,
+        "value": 0,
+        "variant": "Free Trial"
+      },
+      "timestamp": "2018-10-01T12:51:04.160Z",
+      "type": "track",
+      "userId": "f4ca124298",
+      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
+      "receivedAt": "2018-10-01T12:51:04.161Z",
+      "sentAt": "2018-10-01T12:51:02.949Z",
+      "context": {
+        "library": {
+          "name": "analytics-java",
+          "version": "2.1.1"
+        }
+      },
+      "originalTimestamp": "2018-10-01T12:51:02.948Z"
+    },
+    {
+      "anonymousId": "smeom",
+      "event": "Order Completed",
+      "integrations": {},
+      "messageId": "1ae45f68-efa1-4f44-8b91-a6343ade8971",
+      "properties": {
+        "affiliation": "web",
+        "coupon": "N/A",
+        "currency": "USD",
+        "discount": 2,
+        "order_id": "O82738383",
+        "products": [
+          {
+            "brand": "UEFA Champions League",
+            "category": "Event Pass",
+            "coupon": "SKJW96KJSB",
+            "currency": "USD",
+            "name": "Liverpool vs. Manchester Unites (CL 2018)",
+            "price": 0,
+            "product_id": "82738387",
+            "quantity": 1,
+            "value": 0,
+            "variant": "Free Trial"
+          },
+          {
+            "brand": "UEFA",
+            "category": "League Pass",
+            "currency": "USD",
+            "name": "UEFA Championship League Pass for 2018-109",
+            "price": 50,
+            "product_id": "82738383",
+            "quantity": 1,
+            "value": 50,
+            "variant": "Full"
+          }
+        ],
+        "revenue": 50,
+        "shipping": 2,
+        "tax": 2,
+        "total": 54
+      },
+      "timestamp": "2018-10-01T12:51:04.160Z",
+      "type": "track",
+      "userId": "f4ca124298",
+      "writeKey": "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE",
+      "receivedAt": "2018-10-01T12:51:04.161Z",
+      "sentAt": "2018-10-01T12:51:02.949Z",
+      "context": {
+        "library": {
+          "name": "analytics-java",
+          "version": "2.1.1"
+        }
+      },
+      "originalTimestamp": "2018-10-01T12:51:02.948Z"
+    }
+  ],
+  "sentAt": "2018-10-01T12:51:03.008Z"
+}

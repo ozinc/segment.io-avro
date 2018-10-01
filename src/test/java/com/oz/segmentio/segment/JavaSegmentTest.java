@@ -11,8 +11,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 
@@ -21,6 +20,8 @@ public final class JavaSegmentTest {
     String testApiKey = "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE";
     Logger logger = LoggerFactory.getLogger(JavaSegmentTest.class);
 
+    private final Map glbContext = ImmutableMap.of("app",ImmutableMap.of("name","Segment"));
+
     @Test
     public void runTrackTests() throws Exception {
 
@@ -28,7 +29,7 @@ public final class JavaSegmentTest {
 
         Analytics analytics = Analytics
                 .builder(testApiKey)
-                .userAgent("smu")
+                .userAgent("Server")
                 .flushQueueSize(20)
                 .flushInterval(1, TimeUnit.SECONDS)
                 .plugin(blockingFlush.plugin())
@@ -54,37 +55,18 @@ public final class JavaSegmentTest {
                 .userId("f4ca124298")
                 .anonymousId("smeom")
                 .traits(ImmutableMap.of("name", "Michael Bolton","email", "mbolton@initech.com"))
-                .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
+                .context(glbContext)
         );
 
-        Map<String, Object> props = new HashMap<>();
-        props.putAll(ImmutableMap.of(
-                "product_id", "507f1f77bcf86cd799439011",
-                "sku", "G-32",
-                "category","Games",
-                "name","Monopoly: 3rd Edition",
-                "brand", "'Hasbro"));
-        props.putAll(ImmutableMap.of(
-                "variant","200 pieces",
-                "price", 18.99,
-                "quantity", 1,
-                "coupon","MAYDEALS",
-                "position", 3));
-        props.putAll(ImmutableMap.of(
-                "revenue",1,
-                "currency","USD",
-                "value",1.3,
-                "url","https://www.example.com/product/path'",
-                "image_url","https://www.example.com/product/path.jpg"));
+        //Create OZ User Messages
+        for (MessageBuilder message : buildUserMessages()) {
+            analytics.enqueue(message);
+        }
 
-        MessageBuilder purchase = TrackMessage
-                .builder("Product Clicked")
-                .userId("f4ca124298")
-                .anonymousId("smeom")
-                .context(ImmutableMap.of("app",ImmutableMap.of("name","Segment")))
-                .properties(props);
-
-        analytics.enqueue(purchase);
+        //Create OZ Product Messages
+        for (MessageBuilder message : buildProductMessages()) {
+            analytics.enqueue(message);
+        }
 
         MessageBuilder track = TrackMessage
                 .builder("Clicked CTA")
@@ -95,18 +77,79 @@ public final class JavaSegmentTest {
 
         analytics.enqueue(track);
 
-        /*
-        MessageBuilder message = TrackMessage.builder("Schedule")
-                .userId("f4ca124298")
-                .enableIntegration("AS",true)
-                .properties(ImmutableMap.of("category", "Sports","path", "/sports/schedule"))
-                .context(ImmutableMap.of())
-                .anonymousId("smeom");
-        analytics.enqueue(message);
-        */
-
         analytics.flush();
         blockingFlush.block();
         analytics.shutdown();
     }
+
+    public Collection<MessageBuilder> buildProductMessages() {
+
+        ArrayList<MessageBuilder> messages = new ArrayList<>();
+
+        Map<String, Object> product1Props = new HashMap();
+        product1Props.put("product_id","82738387"); //Service_id or bundle_id or Channel_id or Slot_id (Use the lowest ID you have)
+        product1Props.put("name","Liverpool vs. Manchester Unites (CL 2018)");     //Full slug name
+        product1Props.put("brand","UEFA Champions League");    //Brand = "<Service>/<Channel>" only use "<Service>" if product_id = Channel_id (One level above the level used as product_id
+        product1Props.put("category","Event Pass"); //League Pass, Event Pass, Service Subscription, Organization Subscription
+        product1Props.put("variant","Free Trial");  //Full, Free Trial
+        product1Props.put("coupon","SKJW96KJSB");   //Discount or access coupon used to get access
+        product1Props.put("quantity",1);  //Quantity bought
+        product1Props.put("price",0);     //The dollar price of paid
+        product1Props.put("currency","USD");     //Any other hypothetical monetary value (Like the full PPV price of a match)
+        product1Props.put("value",0);     //quantity * price
+
+        messages.add(TrackMessage.builder("Product Clicked")
+                .userId("f4ca124298")
+                .anonymousId("smeom")
+                .properties(product1Props)
+        );
+
+        Map<String, Object> product2Props = new HashMap();
+        product2Props.put("product_id","82738383"); //Service_id or bundle_id or Channel_id or Slot_id (Use the lowest ID you have)
+        product2Props.put("name","UEFA Championship League Pass for 2018-109");     //Full slug name
+        product2Props.put("brand","UEFA");    //Brand = "<Service>/<Channel>" only use "<Service>" if product_id = Channel_id (One level above the level used as product_id
+        product2Props.put("category","League Pass"); //League Pass, Event Pass, Service Subscription, Organization Subscription
+        product2Props.put("variant","Full");  //Full, Free Trial
+        product2Props.put("quantity",1);  //Quantity bought
+        product2Props.put("price",50);     //The dollar price of paid
+        product2Props.put("currency","USD");     //Any other hypothetical monetary value (Like the full PPV price of a match)
+        product2Props.put("value",50);     //Any other hypothetical monetary value (Like the full PPV price of a match)
+
+        messages.add(TrackMessage.builder("Product Clicked")
+                .userId("f4ca124298")
+                .anonymousId("smeom")
+                .properties(product2Props)
+        );
+
+        Map<String, Object> orderProps = new HashMap();
+        orderProps.put("order_id","O82738383");
+        orderProps.put("affiliation","web");//Where was this sold
+        orderProps.put("total",54);       //total after cost
+        orderProps.put("shipping",2);     //sold
+        orderProps.put("tax",2);          //sold
+        orderProps.put("discount",2);     //sold
+        orderProps.put("revenue",50);     //sold
+        orderProps.put("coupon","N/A");   //sold
+        orderProps.put("currency","USD"); //sold
+        orderProps.put("products", Arrays.asList(product1Props, product2Props)); //sold
+
+        messages.add(TrackMessage.builder("Order Completed")
+                .userId("f4ca124298")
+                .anonymousId("smeom")
+                .properties(orderProps)
+        );
+
+        return messages;
+
+    }
+
+    public Collection<MessageBuilder> buildUserMessages() {
+
+        Collection<MessageBuilder> messages = new ArrayList<>();
+
+
+        return messages;
+
+    }
+
 }
