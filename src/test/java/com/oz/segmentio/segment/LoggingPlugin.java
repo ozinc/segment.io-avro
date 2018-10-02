@@ -5,21 +5,25 @@ import com.segment.analytics.Callback;
 import com.segment.analytics.Log;
 import com.segment.analytics.Plugin;
 import com.segment.analytics.messages.Message;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LoggingPlugin implements Plugin {
+
+    private final Logger logger = LoggerFactory.getLogger(LoggingPlugin.class);
+
     @Override
     public void configure(Analytics.Builder builder) {
         builder.log(
                 new Log() {
                     @Override
                     public void print(Level level, String format, Object... args) {
-                        System.out.println(level + ":\t" + String.format(format, args));
+                        logger.debug(level + ":\t" + String.format(format, args));
                     }
 
                     @Override
                     public void print(Level level, Throwable error, String format, Object... args) {
-                        System.out.println(level + ":\t" + String.format(format, args));
-                        System.out.println(error);
+                        logger.error(level + ":\t" + String.format(format, args),error);
                     }
                 });
 
@@ -27,13 +31,12 @@ public class LoggingPlugin implements Plugin {
                 new Callback() {
                     @Override
                     public void success(Message message) {
-                        System.out.println("Uploaded " + message);
+                        logger.debug("Uploaded " + message.toString());
                     }
 
                     @Override
                     public void failure(Message message, Throwable throwable) {
-                        System.out.println("Could not upload " + message);
-                        System.out.println(throwable);
+                        logger.error("Could not upload " + message, throwable);
                     }
                 });
     }

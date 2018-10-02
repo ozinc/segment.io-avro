@@ -5,7 +5,6 @@ import avro.shaded.com.google.common.collect.ImmutableMap;
 
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Callback;
-import com.segment.analytics.MessageInterceptor;
 import com.segment.analytics.messages.*;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -17,13 +16,13 @@ import java.util.concurrent.TimeUnit;
 
 public final class JavaSegmentTest {
 
-    String testApiKey = "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE";
-    Logger logger = LoggerFactory.getLogger(JavaSegmentTest.class);
+    private final String testApiKey = "R4GYcoNaPSg5oXFn7Vp0J6Y9q1YT6CWE";
+    private final Logger logger = LoggerFactory.getLogger(JavaSegmentTest.class);
 
     private final Map glbContext = ImmutableMap.of("app",ImmutableMap.of("name","Segment"));
 
     @Test
-    public void runTrackTests() throws Exception {
+    public void runTrackTests() {
 
         final BlockingFlush blockingFlush = BlockingFlush.create();
 
@@ -36,18 +35,16 @@ public final class JavaSegmentTest {
                 .plugin(new LoggingPlugin())
                 .callback(new Callback() {
                     @Override public void success(Message message) {
-                        logger.warn("Arrived!");
+                        logger.debug("Arrived!");
                     }
 
                     @Override public void failure(Message message, Throwable throwable) {
                         logger.error("Failed: " + message);
                     }
                 }) //
-                .messageInterceptor(new MessageInterceptor() {
-                    @Override public Message intercept(Message message) {
-                        logger.debug("Message interceptor {}",message);
-                        return message;
-                    }
+                .messageInterceptor(message -> {
+                    logger.debug("Message interceptor {}",message);
+                    return message;
                 })
                 .build();
 
@@ -150,8 +147,7 @@ public final class JavaSegmentTest {
         messages.add(TrackMessage.builder("Checkout Step Viewed").userId("f4ca124298").anonymousId("smeom").properties(checkoutProps));
         messages.add(TrackMessage.builder("Checkout Step Completed").userId("f4ca124298").anonymousId("smeom").properties(checkoutProps));
 
-        orderProps.put("context.groupId","0909");
-        messages.add(TrackMessage.builder("Order Completed").userId("f4ca124298").anonymousId("smeom").properties(orderProps));
+        messages.add(TrackMessage.builder("Order Completed").userId("f4ca124298").anonymousId("smeom").properties(orderProps).context(ImmutableMap.of("groupId","0909")));
 
         return messages;
     }
@@ -184,7 +180,7 @@ public final class JavaSegmentTest {
         Map<String, Object> attributionProps = new HashMap<>();
         applicationProps.put("provider","Tune/Kochava/Branch"); //The attribution provider.
         applicationProps.put("campaign",ImmutableMap.of(
-                "source","Network/FB/AdWords/MoPub/Source", //Campaign source — attributed ad network
+                "source","www.mbl.is", //Campaign source — attributed ad network -- Network/FB/AdWords/MoPub/Source
                 "name","Campaign Name", //The name of the attributed campaign.
                 // "content","Organic Content Title", //The content of the campaign.
                 "medium","Web", //Identifies what type of link was used.
@@ -213,6 +209,21 @@ public final class JavaSegmentTest {
 
     private Collection<MessageBuilder> buildGroupMessages() {
         Collection<MessageBuilder> messages = new ArrayList<>();
+
+        Map<String, Object> groupTraits = new HashMap<>();
+        //Creating a group without user participation
+        groupTraits.put("name","Some Community Name 2"); //The name of the account being created.
+        groupTraits.put("type","Athlete"); //The name of the account being created.
+        groupTraits.put("domain","Sport"); //The name of the account being created.
+        groupTraits.put("category","Soccer"); //The name of the account being created.
+        messages.add(GroupMessage.builder("Community/<id1>").userId("<studio-user>").traits(groupTraits).context(ImmutableMap.of("test_addition",true)));
+
+        //User joins a community
+        messages.add(GroupMessage.builder("Community/<id2>").userId("f4ca124298"));
+
+        //User leaving a community
+        //todo - not supported by Segment? -- messages.add(GroupMessage.builder("Community/<id>").userId("f4ca124298"));
+
         return messages;
     }
 
@@ -236,22 +247,22 @@ public final class JavaSegmentTest {
         messages.add(TrackMessage.builder("Signed Up").userId("system").properties(signupProps));
 
 
-        Map<String, Object> authenticationPropes = new HashMap<>();
-        authenticationPropes.put("username",signupProps.get("username"));
-        messages.add(TrackMessage.builder("Signed In").userId("<studio-user>").properties(signupProps));
-        messages.add(TrackMessage.builder("Signed Out").userId("<studio-user>").properties(signupProps));
+        Map<String, Object> authenticationProps = new HashMap<>();
+        authenticationProps.put("username",signupProps.get("username"));
+        messages.add(TrackMessage.builder("Signed In").userId("<studio-user>").properties(authenticationProps));
+        messages.add(TrackMessage.builder("Signed Out").userId("<studio-user>").properties(authenticationProps));
 
 
-        Map<String, Object> invitationPropes = new HashMap<>();
-        authenticationPropes.put("invitee_email","stebax@gmail.com"); //The email address of the person receiving the invite.
-        authenticationPropes.put("invitee_first_name","Stefán"); //	The first name of the person receiving the invite.
-        authenticationPropes.put("invitee_last_name","Baxter"); //The last name of the person receiving the invite.
-        authenticationPropes.put("invitee_role","Promoter"); //The permission group for the person receiving the invite.
-        messages.add(TrackMessage.builder("Invite Sent").userId("<studio-user>").properties(invitationPropes));
+        Map<String, Object> invitationProps = new HashMap<>();
+        invitationProps.put("invitee_email","stebax@gmail.com"); //The email address of the person receiving the invite.
+        invitationProps.put("invitee_first_name","Stefán"); //	The first name of the person receiving the invite.
+        invitationProps.put("invitee_last_name","Baxter"); //The last name of the person receiving the invite.
+        invitationProps.put("invitee_role","Promoter"); //The permission group for the person receiving the invite.
+        messages.add(TrackMessage.builder("Invite Sent").userId("<studio-user>").properties(invitationProps));
 
-        Map<String, Object> studiActionMap = new HashMap<>();
-        studiActionMap.put("studio_user","<studio-user>"); //The one deleting the other
-        messages.add(TrackMessage.builder("Account Removed User").userId("<studio-user-being-deleted>").properties(studiActionMap));
+        Map<String, Object> studioActionProps = new HashMap<>();
+        studioActionProps.put("studio_user","<studio-user>"); //The one deleting the other
+        messages.add(TrackMessage.builder("Account Removed User").userId("<studio-user-being-deleted>").properties(studioActionProps));
 
         Map<String, Object> trialProps = new HashMap<>();
         trialProps.put("trial_start_date","20180110T00:00:00.000T"); //The date when the trial starts. It is an ISO-8601 date string.
