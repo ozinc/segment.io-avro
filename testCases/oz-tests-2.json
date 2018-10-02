@@ -1,0 +1,792 @@
+{
+  "batch": [
+    {
+      "type": "identify",
+      "messageId": "8201b1f8-7514-42e3-93da-fc6a40d79cf0",
+      "timestamp": "2018-10-02T11:51:16.351Z",
+      "context": {
+        "app": {
+          "name": "Segment"
+        }
+      },
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "traits": {
+        "name": "Michael Bolton",
+        "email": "mbolton@initech.com"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "bbcc569b-ab01-4db5-b65b-3cea1723d051",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Application Installed",
+      "properties": {
+        "build": 901,
+        "version": "1.0.1"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "6e34d7fe-dc7a-488f-a3d2-d9a62c103b81",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Application Opened",
+      "properties": {
+        "build": 901,
+        "referring_application": "Concacaf Client",
+        "from_background": true,
+        "version": "1.0.1",
+        "url": "http://www.mbl.is"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "237a9309-e0d0-4a87-89ec-2b763180cd36",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Application Backgrounded",
+      "properties": {
+        "build": 901,
+        "referring_application": "Concacaf Client",
+        "from_background": true,
+        "version": "1.0.1",
+        "url": "http://www.mbl.is"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "9ef07a0c-d4c0-47ff-b433-39fa2b7be3c7",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Application Updated",
+      "properties": {}
+    },
+    {
+      "type": "track",
+      "messageId": "e0643f3b-1d89-48dc-b925-0bb0eec3ac8f",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Application Uninstalled",
+      "properties": {}
+    },
+    {
+      "type": "track",
+      "messageId": "e9ec27cd-b532-40d7-acd5-d69ea4e8eef9",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Application Crashed",
+      "properties": {}
+    },
+    {
+      "type": "track",
+      "messageId": "6eacaebd-4951-4fb6-a19f-0315d869c4cd",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Install Attributed",
+      "properties": {}
+    },
+    {
+      "type": "track",
+      "messageId": "874fff28-06a0-4fac-9f11-59ac93705e14",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Push Notification Received",
+      "properties": {
+        "action": "Accept",
+        "campaign": {
+          "medium": "Push",
+          "source": "Vendor Name",
+          "name": "Referral Flow",
+          "content": "Your friend invited you to play a match."
+        }
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "e1b36a1a-372e-4e76-a9a9-f9ba54d26dd8",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Push Notification Tapped",
+      "properties": {
+        "action": "Accept",
+        "campaign": {
+          "medium": "Push",
+          "source": "Vendor Name",
+          "name": "Referral Flow",
+          "content": "Your friend invited you to play a match."
+        }
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "dc707452-23c0-433b-be83-0f0a29727b47",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Push Notification Bounced",
+      "properties": {
+        "action": "Accept",
+        "campaign": {
+          "medium": "Push",
+          "source": "Vendor Name",
+          "name": "Referral Flow",
+          "content": "Your friend invited you to play a match."
+        }
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "38f8049f-0520-420d-b485-70137113ccbd",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Deep Link Clicked",
+      "properties": {
+        "action": "Accept",
+        "campaign": {
+          "medium": "Push",
+          "source": "Vendor Name",
+          "name": "Referral Flow",
+          "content": "Your friend invited you to play a match."
+        }
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "955748ea-918d-45ee-b332-edc1aed67334",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Deep Link Opened",
+      "properties": {
+        "action": "Accept",
+        "campaign": {
+          "medium": "Push",
+          "source": "Vendor Name",
+          "name": "Referral Flow",
+          "content": "Your friend invited you to play a match."
+        }
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "d105463d-30ed-4544-9089-52c83efea9c1",
+      "timestamp": "2018-10-02T11:51:16.354Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Clicked",
+      "properties": {
+        "quantity": 1,
+        "coupon": "SKJW96KJSB",
+        "price": 0,
+        "product_id": "82738387",
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "variant": "Free Trial",
+        "currency": "USD",
+        "category": "Event Pass",
+        "brand": "UEFA Champions League",
+        "value": 0
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "87a029bc-65d2-4062-960a-c5171ac65a88",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Viewed",
+      "properties": {
+        "quantity": 1,
+        "coupon": "SKJW96KJSB",
+        "price": 0,
+        "product_id": "82738387",
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "variant": "Free Trial",
+        "currency": "USD",
+        "category": "Event Pass",
+        "brand": "UEFA Champions League",
+        "value": 0
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "e1a785d0-c828-4aa0-a49e-04a16694f106",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Added",
+      "properties": {
+        "cart_id": "skdjsidjsdkdj29j",
+        "quantity": 1,
+        "coupon": "SKJW96KJSB",
+        "price": 0,
+        "product_id": "82738387",
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "variant": "Free Trial",
+        "currency": "USD",
+        "category": "Event Pass",
+        "brand": "UEFA Champions League",
+        "value": 0
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "5ac47530-b56c-4d1b-a9d4-b9405e0bfa05",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Added",
+      "properties": {
+        "cart_id": "skdjsidjsdkdj29j",
+        "quantity": 1,
+        "coupon": "SKJW96KJSB",
+        "price": 0,
+        "product_id": "82738387",
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "variant": "Free Trial",
+        "currency": "USD",
+        "category": "Event Pass",
+        "brand": "UEFA Champions League",
+        "value": 0
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "0c4c7708-faf6-40e2-bca2-8ce6419d9bcc",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Removed",
+      "properties": {
+        "cart_id": "skdjsidjsdkdj29j",
+        "quantity": 1,
+        "coupon": "SKJW96KJSB",
+        "price": 0,
+        "product_id": "82738387",
+        "name": "Liverpool vs. Manchester Unites (CL 2018)",
+        "variant": "Free Trial",
+        "currency": "USD",
+        "category": "Event Pass",
+        "brand": "UEFA Champions League",
+        "value": 0
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "2cb4c582-6016-4b2c-8b9d-94d202a3f786",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Product Clicked",
+      "properties": {
+        "quantity": 1,
+        "price": 50,
+        "product_id": "82738383",
+        "name": "UEFA Championship League Pass for 2018-109",
+        "variant": "Full",
+        "currency": "USD",
+        "category": "League Pass",
+        "brand": "UEFA",
+        "value": 50
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "4d0ee79e-c6c5-4dce-9c8c-1e340ca66996",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Cart Viewed",
+      "properties": {
+        "cart_id": "skdjsidjsdkdj29j",
+        "products": [
+          {
+            "quantity": 1,
+            "coupon": "SKJW96KJSB",
+            "price": 0,
+            "product_id": "82738387",
+            "name": "Liverpool vs. Manchester Unites (CL 2018)",
+            "variant": "Free Trial",
+            "currency": "USD",
+            "category": "Event Pass",
+            "brand": "UEFA Champions League",
+            "value": 0
+          },
+          {
+            "quantity": 1,
+            "price": 50,
+            "product_id": "82738383",
+            "name": "UEFA Championship League Pass for 2018-109",
+            "variant": "Full",
+            "currency": "USD",
+            "category": "League Pass",
+            "brand": "UEFA",
+            "value": 50
+          }
+        ]
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "72765eb2-8927-466b-a77d-834baf8566c0",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Checkout Started",
+      "properties": {
+        "cart_id": "skdjsidjsdkdj29j",
+        "total": 54,
+        "revenue": 50,
+        "shipping": 2,
+        "coupon": "N/A",
+        "affiliation": "web",
+        "discount": 2,
+        "tax": 2,
+        "currency": "USD",
+        "order_id": "O82738383",
+        "products": [
+          {
+            "quantity": 1,
+            "coupon": "SKJW96KJSB",
+            "price": 0,
+            "product_id": "82738387",
+            "name": "Liverpool vs. Manchester Unites (CL 2018)",
+            "variant": "Free Trial",
+            "currency": "USD",
+            "category": "Event Pass",
+            "brand": "UEFA Champions League",
+            "value": 0
+          },
+          {
+            "quantity": 1,
+            "price": 50,
+            "product_id": "82738383",
+            "name": "UEFA Championship League Pass for 2018-109",
+            "variant": "Full",
+            "currency": "USD",
+            "category": "League Pass",
+            "brand": "UEFA",
+            "value": 50
+          }
+        ]
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "b00b88ef-0df7-4f92-bccd-78be64c69f74",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Checkout Step Viewed",
+      "properties": {
+        "checkout_id": "50314b8e9bcf000000000000",
+        "step": 1,
+        "order_id": "O82738383"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "ebc40f42-ae59-4f31-ba05-e75bf9cbef9b",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Checkout Step Completed",
+      "properties": {
+        "checkout_id": "50314b8e9bcf000000000000",
+        "step": 1,
+        "order_id": "O82738383"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "3fa2e682-55f0-472c-aa06-3057a7b1358b",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Payment Info Entered",
+      "properties": {
+        "checkout_id": "50314b8e9bcf000000000000",
+        "shipping_method": "Fedex",
+        "step": 1,
+        "order_id": "O82738383",
+        "payment_method": "Visa"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "56c98d76-7bd1-42ab-bf6c-80ae9f7e03fd",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Checkout Step Viewed",
+      "properties": {
+        "checkout_id": "50314b8e9bcf000000000000",
+        "shipping_method": "Fedex",
+        "step": 2,
+        "order_id": "O82738383",
+        "payment_method": "Visa"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "9b4aba3a-1a26-4e68-b601-944565d7e939",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Checkout Step Completed",
+      "properties": {
+        "checkout_id": "50314b8e9bcf000000000000",
+        "shipping_method": "Fedex",
+        "step": 2,
+        "order_id": "O82738383",
+        "payment_method": "Visa"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "da508f06-50af-4ce5-8c56-57f093384470",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "anonymousId": "smeom",
+      "userId": "f4ca124298",
+      "integrations": {},
+      "event": "Order Completed",
+      "properties": {
+        "cart_id": "skdjsidjsdkdj29j",
+        "total": 54,
+        "revenue": 50,
+        "shipping": 2,
+        "coupon": "N/A",
+        "affiliation": "web",
+        "context.groupId": "0909",
+        "discount": 2,
+        "tax": 2,
+        "currency": "USD",
+        "order_id": "O82738383",
+        "products": [
+          {
+            "quantity": 1,
+            "coupon": "SKJW96KJSB",
+            "price": 0,
+            "product_id": "82738387",
+            "name": "Liverpool vs. Manchester Unites (CL 2018)",
+            "variant": "Free Trial",
+            "currency": "USD",
+            "category": "Event Pass",
+            "brand": "UEFA Champions League",
+            "value": 0
+          },
+          {
+            "quantity": 1,
+            "price": 50,
+            "product_id": "82738383",
+            "name": "UEFA Championship League Pass for 2018-109",
+            "variant": "Full",
+            "currency": "USD",
+            "category": "League Pass",
+            "brand": "UEFA",
+            "value": 50
+          }
+        ]
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "5306340d-f258-47a3-9c05-0f827defb0a8",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "system",
+      "integrations": {},
+      "event": "Account Created",
+      "properties": {
+        "account_name": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "aa936cd5-5cb0-42b6-aee2-d4ceac437349",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Account Deleted",
+      "properties": {
+        "account_name": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "d6c31eb4-6dae-434e-92c1-0e227b2dbf28",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "system",
+      "integrations": {},
+      "event": "Account Created",
+      "properties": {
+        "account_name": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "f0be4edc-0888-4e23-b503-338cf30c5fa1",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "system",
+      "integrations": {},
+      "event": "Signed Up",
+      "properties": {
+        "phone": "+354-8200000",
+        "account_name": "JohnnyBGood",
+        "last_name": "Goddrd",
+        "type": "organic",
+        "title": "OZ",
+        "first_name": "Jonathan",
+        "email": "hotmale@hotmail.com",
+        "username": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "71685835-50e1-4238-bbaf-0608d3c1ab1e",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Signed In",
+      "properties": {
+        "phone": "+354-8200000",
+        "account_name": "JohnnyBGood",
+        "last_name": "Goddrd",
+        "type": "organic",
+        "title": "OZ",
+        "first_name": "Jonathan",
+        "email": "hotmale@hotmail.com",
+        "username": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "2dc21a68-0d0f-4785-bddd-9895429eac9c",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Signed Out",
+      "properties": {
+        "phone": "+354-8200000",
+        "account_name": "JohnnyBGood",
+        "last_name": "Goddrd",
+        "type": "organic",
+        "title": "OZ",
+        "first_name": "Jonathan",
+        "email": "hotmale@hotmail.com",
+        "username": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "714cd3c5-071d-41cd-9a20-2891a9de6cd0",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Invite Sent",
+      "properties": {}
+    },
+    {
+      "type": "track",
+      "messageId": "83dac594-8077-4b27-adb7-fbf1fc4657d9",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user-being-deleted\u003e",
+      "integrations": {},
+      "event": "Account Removed User",
+      "properties": {
+        "studio_user": "\u003cstudio-user\u003e"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "a79f32cf-0c8c-4f00-83ab-382961236ea8",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cuser_id\u003e",
+      "integrations": {},
+      "event": "Trial Started",
+      "properties": {
+        "trial_plan_name": "Free Pass for Smu",
+        "trial_start_date": "20180110T00:00:00.000T",
+        "trial_end_date": "20183110T00:00:00.000T"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "fc902268-177f-44c6-a0e0-f9fd75926b86",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cuser_id\u003e",
+      "integrations": {},
+      "event": "Trial Ended",
+      "properties": {
+        "trial_plan_name": "Free Pass for Smu",
+        "trial_start_date": "20180110T00:00:00.000T",
+        "trial_end_date": "20183110T00:00:00.000T"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "4ab84361-e38c-490d-a835-8d3bc71a90ff",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "system",
+      "integrations": {},
+      "event": "Account Created",
+      "properties": {
+        "account_name": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "d68228be-1252-410d-a523-45339f93ef50",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Account Deleted",
+      "properties": {
+        "account_name": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "7377d7b7-5ae9-45b2-8741-8b37fcd96e61",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "system",
+      "integrations": {},
+      "event": "Account Created",
+      "properties": {
+        "account_name": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "98f647ab-b60f-42e2-9636-afb31e6f882a",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "system",
+      "integrations": {},
+      "event": "Signed Up",
+      "properties": {
+        "phone": "+354-8200000",
+        "account_name": "JohnnyBGood",
+        "last_name": "Goddrd",
+        "type": "organic",
+        "title": "OZ",
+        "first_name": "Jonathan",
+        "email": "hotmale@hotmail.com",
+        "username": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "84bfc911-2645-4b43-b5f4-013a76cb8935",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Signed In",
+      "properties": {
+        "phone": "+354-8200000",
+        "account_name": "JohnnyBGood",
+        "last_name": "Goddrd",
+        "type": "organic",
+        "title": "OZ",
+        "first_name": "Jonathan",
+        "email": "hotmale@hotmail.com",
+        "username": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "dfee82a2-5710-4069-a3cf-3106e2c358a7",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Signed Out",
+      "properties": {
+        "phone": "+354-8200000",
+        "account_name": "JohnnyBGood",
+        "last_name": "Goddrd",
+        "type": "organic",
+        "title": "OZ",
+        "first_name": "Jonathan",
+        "email": "hotmale@hotmail.com",
+        "username": "JohnnyBGood"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "230efeb9-5a13-40e7-9ecd-de1eee4452cd",
+      "timestamp": "2018-10-02T11:51:16.355Z",
+      "userId": "\u003cstudio-user\u003e",
+      "integrations": {},
+      "event": "Invite Sent",
+      "properties": {}
+    },
+    {
+      "type": "track",
+      "messageId": "f698a90e-2b18-45fa-ae6c-301c6ae6db61",
+      "timestamp": "2018-10-02T11:51:16.356Z",
+      "userId": "\u003cstudio-user-being-deleted\u003e",
+      "integrations": {},
+      "event": "Account Removed User",
+      "properties": {
+        "studio_user": "\u003cstudio-user\u003e"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "8527a53f-0baf-478d-bf08-9908a805fce2",
+      "timestamp": "2018-10-02T11:51:16.356Z",
+      "userId": "\u003cuser_id\u003e",
+      "integrations": {},
+      "event": "Trial Started",
+      "properties": {
+        "trial_plan_name": "Free Pass for Smu",
+        "trial_start_date": "20180110T00:00:00.000T",
+        "trial_end_date": "20183110T00:00:00.000T"
+      }
+    },
+    {
+      "type": "track",
+      "messageId": "be600663-ef17-4461-ae62-afba09c7025c",
+      "timestamp": "2018-10-02T11:51:16.356Z",
+      "userId": "\u003cuser_id\u003e",
+      "integrations": {},
+      "event": "Trial Ended",
+      "properties": {
+        "trial_plan_name": "Free Pass for Smu",
+        "trial_start_date": "20180110T00:00:00.000T",
+        "trial_end_date": "20183110T00:00:00.000T"
+      }
+    }
+  ],
+  "sentAt": "2018-10-02T11:51:16.356Z",
+  "context": {
+    "library": {
+      "name": "analytics-java",
+      "version": "2.1.1"
+    }
+  },
+  "sequence": 1
+}
