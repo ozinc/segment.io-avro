@@ -31,7 +31,7 @@ public class LoggingPlugin implements Plugin {
                 new Callback() {
                     @Override
                     public void success(Message message) {
-                        logger.debug("Uploaded " + message.toString());
+                        logger.warn("Uploaded " + message.toString());
                     }
 
                     @Override

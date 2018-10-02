@@ -60,12 +60,14 @@ public final class JavaSegmentTest {
         for (MessageBuilder message : applicationMessages()) analytics.enqueue(message);
         //Create OZ Product Messages
         for (MessageBuilder message : buildProductMessages()) analytics.enqueue(message);
-        //Create OZ Group messages // for each community
+        //Create OZ Group messages // for each organization, community, service
         for (MessageBuilder message : buildGroupMessages()) analytics.enqueue(message);
-        //Create OZ SaaS Messages
+        //Create OZ SaaS / User Messages
         for (MessageBuilder message : buildSaaSMessages()) analytics.enqueue(message);
-        //Create OZ SaaS Messages
-        for (MessageBuilder message : buildSaaSMessages()) analytics.enqueue(message);
+        //Create OZ Video Messages
+        for (MessageBuilder message : buildVideoSMessages()) analytics.enqueue(message);
+        //Create OZ Video Messages
+        for (MessageBuilder message : buildScreenPageMessages()) analytics.enqueue(message);
 
         analytics.flush();
         blockingFlush.block();
@@ -227,6 +229,110 @@ public final class JavaSegmentTest {
         return messages;
     }
 
+    private  Collection<MessageBuilder> buildScreenPageMessages() {
+        Collection<MessageBuilder> messages = new ArrayList<>();
+
+        Map<String, Object> pageProps = new HashMap<>();
+        pageProps.put("title","Som title from web page"); //Title of the page
+        pageProps.put("keywords", Arrays.asList("video","sports")); //A list/array of kewords describing the content of the page.  The keywords would most likely be the same as, or similar to, the keywords you would find in an html meta tag for SEO purposes. This property is mainly used by content publishers that rely heavily on pageview tracking. This is not automatically collected.
+        pageProps.put("url","https://www.oz.com/stod2sport/live/8a4c2e36-fef5-41bf-b4fa-3c13be80f581"); //Full URL of the page. First we look for the canonical url. If the canonical url is not provided, we use location.href from the DOM API.
+        //pageProps.put("search","soccer"); //Query string portion of the URL of the page
+        pageProps.put("referrer","https://www.mbl.is/frettir/"); //Full URL of the previous page Equivalent to document.referrer from the DOM API.
+        pageProps.put("path","/concacafnationsleage"); //Path portion of the URL of the page. Equivalent to canonical path which defaults to location.pathname from the DOM API.
+        messages.add(PageMessage.builder("Stöð 2 Sport").userId("f4ca124298").properties(pageProps));
+
+        //
+        pageProps.put("url","https://www.oz.com/stod2sport/schedule"); //Full URL of the page. First we look for the canonical url. If the canonical url is not provided, we use location.href from the DOM API.
+        pageProps.remove("referrer"); //Full URL of the page. First we look for the canonical url. If the canonical url is not provided, we use location.href from the DOM API.
+        pageProps.remove("keywords"); //Full URL of the page. First we look for the canonical url. If the canonical url is not provided, we use location.href from the DOM API.
+        messages.add(PageMessage.builder("Dagskrá - Stöð 2 Sport").userId("f4ca124298").properties(pageProps));
+        messages.add(PageMessage.builder("Dagskrá - Stöð 2 Sport").userId("f4ca124298").properties(pageProps));
+        return messages;
+    }
+    private  Collection<MessageBuilder> buildVideoSMessages() {
+        Collection<MessageBuilder> messages = new ArrayList<>();
+
+        Map<String, Object> videoProps = new HashMap<>();
+        videoProps.put("session_id","12345");
+        videoProps.put("content_asset_ids", Arrays.asList("segA"));
+        videoProps.put("content_pod_ids", Arrays.asList("segA","segB"));
+        videoProps.put("ad_asset_id", Arrays.asList("segA","segB"));
+        videoProps.put("ad_type", Arrays.asList("mid-roll","post-roll"));
+        videoProps.put("position", 0);
+        videoProps.put("total_length", 500);
+        videoProps.put("bitrate", 100);
+        videoProps.put("framerate", 50);
+        videoProps.put("video_player", "hls player");
+        videoProps.put("sound", 88);
+        videoProps.put("full_screen", false);
+        videoProps.put("ad_enabled", true);
+        videoProps.put("quality", "hls hd1080");
+        videoProps.put("livestream", false);
+        messages.add(TrackMessage.builder("Video Playback Started").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Paused").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Interrupted").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Buffer Started").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Buffer Completed").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Seek Started").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Seek Completed").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Resumed").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Completed").userId("f4ca124298").properties(videoProps));
+        messages.add(TrackMessage.builder("Video Playback Completed").userId("f4ca124298").properties(videoProps));
+
+        Map<String, Object> videoContentProps = new HashMap<>();
+        videoContentProps.put("session_id","12345"); //User session, video session, browser session if available
+        videoContentProps.put("asset_id", "segA"); // the stream, slot or vod id being played
+        videoContentProps.put("pod_id", "segB"); // if this is part of a video plaback collection/playlist then which section is this
+        videoContentProps.put("program", "Planet Earth"); //Name of the series / program / league
+        videoContentProps.put("title", "Planet Seasonal Forests"); //Name of the episode, match, slot
+        videoContentProps.put("description", "David Attenborough reveals the greatest woodlands on earth."); //Description
+        videoContentProps.put("season", "1"); //What season is this
+        videoContentProps.put("episode", "1"); //What episode is this
+        videoContentProps.put("genre", "Documentary"); //Genre of the program. Use path for main, sub-categories Sports/Football
+        videoContentProps.put("publisher", "BBC"); //Service or series producer
+        videoContentProps.put("full_episode", true); //is this a full show or a part of a show
+        videoContentProps.put("livestream", false);
+        videoContentProps.put("keywords", Arrays.asList("nature","forests","earth")); //any keywords/tags to attach to the playback
+        videoContentProps.put("position", 0); //Current position
+        videoContentProps.put("total_length", 3983); //Total length
+        messages.add(TrackMessage.builder("Video Content Started").userId("f4ca124298").properties(videoContentProps));
+        videoContentProps.put("position", 1000);
+        messages.add(TrackMessage.builder("Video Content Playing").userId("f4ca124298").properties(videoContentProps));
+        videoContentProps.put("position", 2000);
+        messages.add(TrackMessage.builder("Video Content Playing").userId("f4ca124298").properties(videoContentProps));
+        videoContentProps.put("position", 3000);
+        messages.add(TrackMessage.builder("Video Content Playing").userId("f4ca124298").properties(videoContentProps));
+        videoContentProps.put("position", 3983);
+        messages.add(TrackMessage.builder("Video Content Completed").userId("f4ca124298").properties(videoContentProps));
+
+
+        Map<String, Object> videoAdProps = new HashMap<>();
+        videoContentProps.put("session_id","12345"); //User session, video session, browser session if available
+        videoContentProps.put("asset_id", "0129370"); //is this a full show or a part of a show
+        videoContentProps.put("pod_id", "segA"); //is this a full show or a part of a show
+        videoContentProps.put("type", "pre-roll"); //is this a full show or a part of a show
+        videoContentProps.put("title", "The New New Thing!"); //is this a full show or a part of a show
+        videoContentProps.put("position", 0); //is this a full show or a part of a show
+        videoContentProps.put("total_length", 30); //is this a full show or a part of a show
+        videoContentProps.put("publisher", "Apple"); //is this a full show or a part of a show
+        videoContentProps.put("load_type", "dynamic"); //is this a full show or a part of a show
+        messages.add(TrackMessage.builder("Video Ad Started").userId("f4ca124298").properties(videoAdProps));
+        videoContentProps.put("position", 5); //is this a full show or a part of a show
+        messages.add(TrackMessage.builder("Video Ad Playing").userId("f4ca124298").properties(videoAdProps));
+        videoContentProps.put("position", 30); //is this a full show or a part of a show
+        messages.add(TrackMessage.builder("Video Ad Completed").userId("f4ca124298").properties(videoAdProps));
+
+        Map<String, Object> videoQualityProps = new HashMap<>();
+        videoQualityProps.put("bitrate", 100);
+        videoQualityProps.put("framerate", 50);
+        videoQualityProps.put("startupTime", 50);
+        videoQualityProps.put("droppedFrames", 10);
+        messages.add(TrackMessage.builder("Video Quality Event").userId("f4ca124298").properties(videoQualityProps));
+
+
+        return messages;
+    }
+
     private  Collection<MessageBuilder> buildSaaSMessages() {
         Collection<MessageBuilder> messages = new ArrayList<>();
 
@@ -271,6 +377,7 @@ public final class JavaSegmentTest {
         messages.add(TrackMessage.builder("Trial Started").userId("<user_id>").properties(trialProps));
         messages.add(TrackMessage.builder("Trial Ended").userId("<user_id>").properties(trialProps));
 
+        messages.add(AliasMessage.builder("<user_id>").userId("<new-id>"));
 
         return messages;
     }
