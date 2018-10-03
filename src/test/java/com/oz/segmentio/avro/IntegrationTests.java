@@ -32,6 +32,27 @@ public final class IntegrationTests {
 
     @Test
     public void runCases() throws Exception {
+        Collection<Class<? extends SpecificRecordBase>> schemata = getSchemaClasses();
+        Path resourceTestCases = Paths.get(Resources.getResource(IntegrationTests.class, "").toURI());
+        Path customTestCases = Paths.get(System.getProperty("com.oz.segmentio.avro.projectRoot", ".")).resolve("testCases");
+        for (final Path cases : Arrays.asList(resourceTestCases, customTestCases)) {
+            try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(cases)) {
+                directoryStream.forEach(file -> {
+                    if (file.toString().endsWith(".json")) {
+                        try {
+                            for (byte[] raw : maybeFlattenBatch(Files.readAllBytes(file))) {
+                                verifyRawJSON(schemata, raw);
+                            }
+                        } catch (AssertionError | IOException e) {
+                            throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
+                        }
+                    }
+                });
+            }
+        }
+    }
+
+    public static Collection<Class<? extends SpecificRecordBase>> getSchemaClasses() {
         Collection<Class<? extends SpecificRecordBase>> schemata = new ArrayList<>(JsonToAvroUtils.allSchemata());
         if (!schemata.remove(Tracking.class)) {
             fail(
@@ -41,73 +62,53 @@ public final class IntegrationTests {
         }
         // Add aggregate Tracking event at the end of the classes to test so it's used as a fallback should no specific class match
         schemata.add(Tracking.class);
-        Path resourceTestCases = Paths.get(Resources.getResource(IntegrationTests.class, "").toURI());
-        Path customTestCases = Paths.get(System.getProperty("com.oz.segmentio.avro.projectRoot", ".")).resolve("testCases");
-        for (final Path cases : Arrays.asList(resourceTestCases, customTestCases)) {
-            try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(cases)) {
-                directoryStream.forEach(file -> {
-                    if (file.toString().endsWith(".json")) {
-                        try {
-                            for (byte[] raw : maybeFlattenBatch(Files.readAllBytes(file))) {
-                                String type = typeFromJsonFile(raw);
-                                String jsonString = new String(raw, StandardCharsets.UTF_8);
-                                List<Class<?>> matched = schemata.stream().filter(
-                                    cls -> {
-                                        Schema schema;
-                                        try {
-                                            schema = extractSchema(cls);
-                                        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-                                            throw new AssertionError(
-                                                "Extracting schema from AVRO class failed, " +
-                                                    "this is likely an issue with the AVRO dependency itself.",
-                                                e
-                                            );
-                                        }
-                                        if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
-                                            return false;
-                                        }
-                                        try {
-                                            try {
-                                                assertFullCycle(schema, cls, new ByteArrayInputStream(raw));
-                                            } catch (Throwable t) {
-                                                boolean isTrackingSchema = Tracking.class.equals(cls);
-                                                // If this schema should have matched we try to get a more descriptive error message,
-                                                // otherwise we just pass the given Throwable up the stack.
-                                                if (type != null && type.equals(schema.getProp("_type")) || (isTrackingType(raw) && isTrackingSchema)) {
-                                                    failWithProblemMessage(t, raw, schema, type, isTrackingSchema);
-                                                } else {
-                                                    throw t;
-                                                }
-                                            }
-                                            return true;
-                                        } catch (Exception ignored) {
-                                            return false;
-                                        }
-                                    }
-                                ).collect(Collectors.toList());
-                                if (matched.isEmpty()) {
-                                    throw new AssertionError("Failed to find schema for:\n" + jsonString);
-                                } else if (isTrackingType(raw) && !"track".equals(type)) {
-                                    if (matched.size() == 1) {
-                                        if (!matched.contains(Tracking.class)) {
-                                            throw new AssertionError(
-                                                "Failed to find correctly identify schema for:\n" + jsonString +
-                                                    "\nGeneric Tracking schema did not match but type [" + type + "] was found to be of 'track' type."
-                                            );
-                                        }
-                                    } else if (matched.size() != 2) {
-                                        throw new AssertionError(
-                                            "Found more than 2 schemata for:\n" + jsonString +
-                                                "\nbut only 2 should have been found for identified type [" + type + "] (Tracking and type specific schema)."
-                                        );
-                                    }
-                                }
-                            }
-                        } catch (AssertionError | IOException e) {
-                            throw new AssertionError("Integration test failed to find valid schema for [" + file + ']', e);
+        return schemata;
+    }
+
+    public static void verifyRawJSON(final Collection<Class<? extends SpecificRecordBase>> schemata, final byte[] raw) throws IOException {
+        String type = typeFromJsonFile(raw);
+        String jsonString = new String(raw, StandardCharsets.UTF_8);
+        List<Class<?>> matched = schemata.stream().filter(
+            cls -> {
+                Schema schema;
+                schema = extractSchema(cls);
+                if (type != null && !type.equals(schema.getProp("_type")) && !Tracking.class.equals(cls)) {
+                    return false;
+                }
+                try {
+                    try {
+                        assertFullCycle(schema, cls, new ByteArrayInputStream(raw));
+                    } catch (Throwable t) {
+                        boolean isTrackingSchema = Tracking.class.equals(cls);
+                        // If this schema should have matched we try to get a more descriptive error message,
+                        // otherwise we just pass the given Throwable up the stack.
+                        if (type != null && type.equals(schema.getProp("_type")) || (isTrackingType(raw) && isTrackingSchema)) {
+                            failWithProblemMessage(t, raw, schema, type, isTrackingSchema);
+                        } else {
+                            throw t;
                         }
                     }
-                });
+                    return true;
+                } catch (Exception ignored) {
+                    return false;
+                }
+            }
+        ).collect(Collectors.toList());
+        if (matched.isEmpty()) {
+            throw new AssertionError("Failed to find schema for:\n" + jsonString);
+        } else if (isTrackingType(raw) && !"track".equals(type)) {
+            if (matched.size() == 1) {
+                if (!matched.contains(Tracking.class)) {
+                    throw new AssertionError(
+                        "Failed to find correctly identify schema for:\n" + jsonString +
+                            "\nGeneric Tracking schema did not match but type [" + type + "] was found to be of 'track' type."
+                    );
+                }
+            } else if (matched.size() != 2) {
+                throw new AssertionError(
+                    "Found more than 2 schemata for:\n" + jsonString +
+                        "\nbut only 2 should have been found for identified type [" + type + "] (Tracking and type specific schema)."
+                );
             }
         }
     }
@@ -133,6 +134,9 @@ public final class IntegrationTests {
             JsonToAvroUtils.normalizedJSON(schema, map);
         } catch (SchemaIncompatibilityException e) {
             problems.add(e.getMessage());
+        }
+        if (problems.isEmpty()) {
+            problems.add(t.getMessage());
         }
         throw new AssertionError(
             "JSON: \n"
@@ -187,8 +191,15 @@ public final class IntegrationTests {
         return map;
     }
 
-    private static Schema extractSchema(Class<? extends SpecificRecordBase> cls)
-        throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        return (Schema) cls.getMethod("getClassSchema", null).invoke(null);
+    private static Schema extractSchema(Class<? extends SpecificRecordBase> cls) {
+        try {
+            return (Schema) cls.getMethod("getClassSchema", null).invoke(null);
+        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
+            throw new AssertionError(
+                "Extracting schema from AVRO class failed, " +
+                    "this is likely an issue with the AVRO dependency itself.",
+                e
+            );
+        }
     }
 }

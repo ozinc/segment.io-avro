@@ -351,6 +351,8 @@ public final class FullCycleTests {
                     }
                     if (subtypes.get(0) == Schema.Type.RECORD) {
                         assertAvroEqualsMap((SpecificRecordBase) avro.get(fieldPos), (Map<String, Object>) map.get(fieldName));
+                    } else if (subtypes.get(0) == Schema.Type.ARRAY) {
+                        deepAssertRecordsEqual(avro.get(fieldPos), map.get(fieldName));
                     } else {
                         Assertions.assertThat(avro.get(fieldPos)).isEqualTo(map.get(fieldName));
                     }
@@ -365,6 +367,10 @@ public final class FullCycleTests {
 
     @SuppressWarnings("unchecked")
     private static void deepAssertRecordsEqual(Object avro, Object json) {
+        if (null == avro && null == json) {
+            // Short circuit null == null case
+            return;
+        }
         if (avro instanceof List) {
             List<Object> avroList = (List<Object>) avro;
             List<Object> jsonList = (List<Object>) json;

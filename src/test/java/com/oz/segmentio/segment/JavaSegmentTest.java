@@ -3,9 +3,12 @@ package com.oz.segmentio.segment;
 
 import avro.shaded.com.google.common.collect.ImmutableMap;
 
+import com.oz.segmentio.avro.IntegrationTests;
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Callback;
 import com.segment.analytics.messages.*;
+import java.io.IOException;
+import org.apache.avro.specific.SpecificRecordBase;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +28,7 @@ public final class JavaSegmentTest {
     public void runTrackTests() {
 
         final BlockingFlush blockingFlush = BlockingFlush.create();
-
+        Collection<Class<? extends SpecificRecordBase>> schemata = IntegrationTests.getSchemaClasses();
         Analytics analytics = Analytics
                 .builder(testApiKey)
                 .userAgent("Server")
@@ -44,6 +47,11 @@ public final class JavaSegmentTest {
                 }) //
                 .messageInterceptor(message -> {
                     logger.debug("Message interceptor {}",message);
+                    try {
+                        IntegrationTests.verifyRawJSON(schemata, MessageUtils.messageToJSON(message));
+                    } catch (IOException e) {
+                        throw new AssertionError(e);
+                    }
                     return message;
                 })
                 .build();
@@ -218,7 +226,8 @@ public final class JavaSegmentTest {
         groupTraits.put("type","Athlete"); //The name of the account being created.
         groupTraits.put("domain","Sport"); //The name of the account being created.
         groupTraits.put("category","Soccer"); //The name of the account being created.
-        messages.add(GroupMessage.builder("Community/<id1>").userId("<studio-user>").traits(groupTraits).context(ImmutableMap.of("test_addition",true)));
+        // TODO: test_addition is not a context field
+        messages.add(GroupMessage.builder("Community/<id1>").userId("<studio-user>").traits(groupTraits).context(/*ImmutableMap.of("test_addition",true)*/ Collections.emptyMap()));
 
         //User joins a community
         messages.add(GroupMessage.builder("Community/<id2>").userId("f4ca124298"));
@@ -256,8 +265,8 @@ public final class JavaSegmentTest {
         videoProps.put("session_id","12345");
         videoProps.put("content_asset_ids", Arrays.asList("segA"));
         videoProps.put("content_pod_ids", Arrays.asList("segA","segB"));
-        videoProps.put("ad_asset_id", Arrays.asList("segA","segB"));
-        videoProps.put("ad_type", Arrays.asList("mid-roll","post-roll"));
+        videoProps.put("ad_asset_ids", Arrays.asList("segA","segB"));
+        videoProps.put("ad_types", Arrays.asList("mid-roll","post-roll"));
         videoProps.put("position", 0);
         videoProps.put("total_length", 500);
         videoProps.put("bitrate", 100);

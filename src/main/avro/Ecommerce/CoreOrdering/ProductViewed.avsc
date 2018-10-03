@@ -182,7 +182,10 @@
           },
           {
             "name": "position",
-            "type": "int",
+            "type": [
+              "null",
+              "int"
+            ],
             "doc": "Position in the product list (ex. 3)"
           },
           {
@@ -203,11 +206,22 @@
           },
           {
             "name": "image_url",
-            "type": "string",
+            "type": [
+              "null",
+              "string"
+            ],
             "doc": "Image url of the product"
           }
         ]
       }
+    },
+    {
+      "name": "sequence",
+      "type": [
+        "null",
+        "long"
+      ],
+      "doc": "Not documented, only shows up in test cases."
     }
   ]
 }

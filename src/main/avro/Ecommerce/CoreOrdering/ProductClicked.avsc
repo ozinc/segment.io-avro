@@ -96,66 +96,74 @@
       "doc": "Name of the action that a user has performed."
     },
     /* ========================= Specific fields start below =================== */
-    //TODO: Specific fields here are the same as the fields in Product
     {
-      "name": "product_id",
-      "type": "string",
-      "doc": "Database id of the product being viewed"
-    },
-    {
-      "name": "sku",
-      "type": "string",
-      "doc": "Sku of the product being viewed"
-    },
-    {
-      "name": "category",
-      "type": "string",
-      "doc": "Product category being viewed"
-    },
-    {
-      "name": "name",
-      "type": "string",
-      "doc": "Name of the product being viewed"
-    },
-    {
-      "name": "brand",
-      "type": "string",
-      "doc": "Brand associated with the product"
-    },
-    {
-      "name": "variant",
-      "type": "string",
-      "doc": "Variant of the product (e.g. Black)"
-    },
-    {
-      "name": "price",
-      "type": "float",
-      "doc": "Price of the product being viewed"
-    },
-    {
-      "name": "quantity",
-      "type": "int",
-      "doc": "Quantity of a product"
-    },
-    {
-      "name": "coupon",
-      "type": "string",
-      "doc": "Coupon code associated with a product (e.g MAY_DEALS_3)"
-    },
-    {
-      "name": "position",
-      "type": "int",
-      "doc": "Position in the product list (ex. 3)"
-    },
-    {
-      "name": "url",
-      "type": "string",
-      "doc": "URL of the product page"
-    },
-    {
-      "name": "image_url",
-      "type": "string",
-      "doc": "Image url of the product"
+      "name": "properties",
+      "type": {
+        "type": "record",
+        "name": "ProductClickedProperties",
+        "fields": [
+          {
+            "name": "product_id",
+            "type": "string",
+            "doc": "Database id of the product being viewed"
+          },
+          {
+            "name": "sku",
+            "type": "string",
+            "doc": "Sku of the product being viewed"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "doc": "Product category being viewed"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "doc": "Name of the product being viewed"
+          },
+          {
+            "name": "brand",
+            "type": "string",
+            "doc": "Brand associated with the product"
+          },
+          {
+            "name": "variant",
+            "type": "string",
+            "doc": "Variant of the product (e.g. Black)"
+          },
+          {
+            "name": "price",
+            "type": "float",
+            "doc": "Price of the product being viewed"
+          },
+          {
+            "name": "quantity",
+            "type": "int",
+            "doc": "Quantity of a product"
+          },
+          {
+            "name": "coupon",
+            "type": "string",
+            "doc": "Coupon code associated with a product (e.g MAY_DEALS_3)"
+          },
+          {
+            "name": "position",
+            "type": "int",
+            "doc": "Position in the product list (ex. 3)"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "doc": "URL of the product page"
+          },
+          {
+            "name": "image_url",
+            "type": "string",
+            "doc": "Image url of the product"
+          }
+        ]
+      }
     }
   ]
 }

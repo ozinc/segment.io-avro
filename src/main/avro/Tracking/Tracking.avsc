@@ -206,6 +206,14 @@
               ]
             },
             {
+              "name": "location",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "Not documented, only found in test cases in oz-tests-1.json"
+            },
+            {
               "name": "version",
               "type": [
                 "null",
@@ -397,6 +405,16 @@
               ]
             },
             {
+              "name": "ad_asset_ids",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ]
+            },
+            {
               "name": "ad_pod_id",
               "type": [
                 "null",
@@ -408,6 +426,16 @@
               "type": [
                 "null",
                 "AdType"
+              ]
+            },
+            {
+              "name": "ad_types",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "AdType"
+                }
               ]
             },
             {
@@ -426,6 +454,20 @@
             },
             {
               "name": "video_player",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "droppedFrames",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "startupTime",
               "type": [
                 "null",
                 "string"
@@ -488,6 +530,14 @@
               ]
             },
             {
+              "name": "coupon",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "Coupon code associated with a product (e.g MAY_DEALS_3)"
+            },
+            {
               "name": "variant",
               "type": [
                 "null",
@@ -509,6 +559,93 @@
               ]
             },
             {
+              "name": "total",
+              "type": [
+                "null",
+                "float"
+              ]
+            },
+            {
+              "name": "shipping",
+              "type": [
+                "null",
+                "float"
+              ]
+            },
+            {
+              "name": "affiliation",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "discount",
+              "type": [
+                "null",
+                "float"
+              ]
+            },
+            {
+              "name": "tax",
+              "type": [
+                "null",
+                "float"
+              ]
+            },
+            {
+              "name": "order_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "payment_method",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "cart_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "step",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "shipping_method",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "products",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "Product"
+                }
+              ]
+            },
+            {
+              "name": "checkout_id",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
               "name": "category",
               "type": [
                 "null",
@@ -525,6 +662,13 @@
             },
             {
               "name": "image_url",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "studio_user",
               "type": [
                 "null",
                 "string"
@@ -1034,6 +1178,14 @@
         "null",
         "int"
       ]
+    },
+    {
+      "name": "sequence",
+      "type": [
+        "null",
+        "long"
+      ],
+      "doc": "Not documented, only shows up in test cases."
     }
   ]
 }

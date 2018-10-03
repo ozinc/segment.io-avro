@@ -316,6 +316,14 @@
         "null",
         "string"
       ]
+    },
+    {
+      "name": "sequence",
+      "type": [
+        "null",
+        "long"
+      ],
+      "doc": "Not documented, only shows up in test cases."
     }
   ]
 }

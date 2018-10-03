@@ -33,11 +33,17 @@
             },
             {
               "name": "version",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             },
             {
               "name": "build",
-              "type": "string"
+              "type": [
+                "null",
+                "string"
+              ]
             }
             // TODO: Maybe build is numeric?
           ]

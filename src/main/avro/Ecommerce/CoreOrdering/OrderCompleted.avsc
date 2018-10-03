@@ -2,6 +2,7 @@
   "namespace": "com.oz.segmentio.avro",
   "type": "record",
   "name": "OrderCompleted",
+  "_type": "Order Completed",
   "fields": [
     {
       "name": "anonymousId",
@@ -97,62 +98,89 @@
     },
     /* ========================= Specific fields start below =================== */
     {
-      "name": "checkout_id",
-      "type": "string",
-      "doc": "Checkout ID"
-    },
-    {
-      "name": "order_id",
-      "type": "string",
-      "doc": "Order/transaction ID"
-    },
-    {
-      "name": "affiliation",
-      "type": "string",
-      "doc": "Store or affiliation from which this transaction occurred (e.g. Google Store)"
-    },
-    {
-      "name": "total",
-      "type": "float",
-      "doc": "Revenue with discounts and coupons added in. Note that our Google Analytics Ecommerce destination accepts total or revenue, but not both. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied"
-    },
-    {
-      "name": "revenue",
-      "type": "float",
-      "doc": "Revenue associated with the transaction (excluding shipping and tax)"
-    },
-    {
-      "name": "shipping",
-      "type": "float",
-      "doc": "Shipping cost associated with the transaction"
-    },
-    {
-      "name": "tax",
-      "type": "float",
-      "doc": "Total tax associated with the transaction"
-    },
-    {
-      "name": "discount",
-      "type": "float",
-      "doc": "Total discount associated with the transaction"
-    },
-    {
-      "name": "coupon",
-      "type": "string",
-      "doc": "Transaction coupon redeemed with the transaction"
-    },
-    {
-      "name": "currency",
-      "type": "string",
-      "doc": "Currency code associated with the transaction"
-    },
-    {
-      "name": "products",
+      "name": "properties",
       "type": {
-        "type": "array",
-        "items": "Product"
-      },
-      "doc": "Products in the order"
+        "type": "record",
+        "name": "OrderCompletedProperties",
+        "fields": [
+          {
+            "name": "checkout_id",
+            "type": [
+              "null",
+              "string"
+            ],
+            "doc": "Checkout ID"
+          },
+          {
+            "name": "cart_id",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          {
+            "name": "order_id",
+            "type": "string",
+            "doc": "Order/transaction ID"
+          },
+          {
+            "name": "affiliation",
+            "type": "string",
+            "doc": "Store or affiliation from which this transaction occurred (e.g. Google Store)"
+          },
+          {
+            "name": "total",
+            "type": "float",
+            "doc": "Revenue with discounts and coupons added in. Note that our Google Analytics Ecommerce destination accepts total or revenue, but not both. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied"
+          },
+          {
+            "name": "revenue",
+            "type": "float",
+            "doc": "Revenue associated with the transaction (excluding shipping and tax)"
+          },
+          {
+            "name": "shipping",
+            "type": "float",
+            "doc": "Shipping cost associated with the transaction"
+          },
+          {
+            "name": "tax",
+            "type": "float",
+            "doc": "Total tax associated with the transaction"
+          },
+          {
+            "name": "discount",
+            "type": "float",
+            "doc": "Total discount associated with the transaction"
+          },
+          {
+            "name": "coupon",
+            "type": "string",
+            "doc": "Transaction coupon redeemed with the transaction"
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "doc": "Currency code associated with the transaction"
+          },
+          {
+            "name": "products",
+            "type": {
+              "type": "array",
+              "items": "Product"
+            },
+            "doc": "Products in the order"
+          }
+        ]
+      }
+    },
+    {
+      "name": "sequence",
+      "type": [
+        "null",
+        "long"
+      ],
+      "doc": "Not documented, only shows up in test cases."
     }
   ]
 }

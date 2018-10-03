@@ -10,7 +10,10 @@
     },
     {
       "name": "sku",
-      "type": "string",
+      "type": [
+        "null",
+        "string"
+      ],
       "doc": "Sku of the product being viewed"
     },
     {
@@ -43,6 +46,22 @@
       "name": "price",
       "type": "float",
       "doc": "Price of the product being viewed"
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "float"
+      ],
+      "doc": "Not documented only found in test cases."
+    },
+    {
+      "name": "currency",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Currency code associated with the price"
     },
     {
       "name": "quantity",

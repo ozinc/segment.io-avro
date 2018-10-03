@@ -159,6 +159,30 @@
               "doc": "Email address of group"
             },
             {
+              "name": "domain",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "Not documented but found in test cases"
+            },
+            {
+              "name": "type",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "Not documented but found in test cases"
+            },
+            {
+              "name": "category",
+              "type": [
+                "null",
+                "string"
+              ],
+              "doc": "Not documented but found in test cases"
+            },
+            {
               "name": "employees",
               "type": [
                 "null",
@@ -177,7 +201,10 @@
             },
             {
               "name": "industry",
-              "type": "string",
+              "type": [
+                "null",
+                "string"
+              ],
               "doc": "Industry a user works in, or a group is part of"
             },
             {
@@ -203,7 +230,10 @@
             },
             {
               "name": "plan",
-              "type": "string",
+              "type": [
+                "null",
+                "string"
+              ],
               "doc": "Plan that a group is in"
             },
             {

@@ -72,6 +72,9 @@ public final class JsonToAvroUtils {
     private static Map<String, Object> sanitizeNumericTypes(Schema avro, Map<String, Object> map) {
         Map<String, Object> result = new HashMap<>();
         map.forEach((key, value) -> {
+            if (value == null) {
+                return;
+            }
             Schema.Field relevantField = avro.getField(key);
             if (relevantField == null) {
                 throw new SchemaIncompatibilityException("Found key [" + key + "] in JSON data but it's not part of the AVRO schema.");
@@ -123,6 +126,22 @@ public final class JsonToAvroUtils {
                     Schema elementSchema = extractUnionSchema(relevantField).getElementType();
                     if (elementSchema.getType() == Schema.Type.STRING) {
                         result.put(key, value);
+                    } else if (elementSchema.getType() == Schema.Type.RECORD) {
+                        List<Object> foundArray = (List<Object>) value;
+                        int size = foundArray.size();
+                        ArrayList<Object> resultArray = new ArrayList<>(size);
+                        for (int i = 0; i < size; ++i) {
+                            resultArray.add(i, sanitizeNumericTypes(elementSchema, (Map<String, Object>) foundArray.get(i)));
+                        }
+                        result.put(key, resultArray);
+                    } else if (elementSchema.getType() == Schema.Type.ENUM) {
+                        List<Object> foundArray = (List<Object>) value;
+                        int size = foundArray.size();
+                        ArrayList<Object> resultArray = new ArrayList<>(size);
+                        for (int i = 0; i < size; ++i) {
+                            resultArray.add(i, stringToEnum(String.valueOf(foundArray.get(i))));
+                        }
+                        result.put(key, resultArray);
                     } else {
                         throw new IllegalArgumentException(
                             "Numeric type sanitization for nested [" + elementSchema + "] in [ARRAY] not yet supported."
